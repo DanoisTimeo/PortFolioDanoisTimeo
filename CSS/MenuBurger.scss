@@ -1,0 +1,105 @@
+.burger-menu {
+    position: fixed; /* Ajout pour positionner le menu de manière fixe */
+    top: 50px; /* Ajout pour le placer en haut de l'écran */
+    right: 100px; /* Ajout pour le placer à gauche de l'écran */
+    margin: 0; /* Ajout pour enlever les marges par défaut */
+    z-index: 1000; /* Ajout pour placer le menu au dessus de tout le reste */
+    width: 40px;
+    display: block;
+    transition: all .3s;
+    cursor: pointer;
+    height: 40px;
+
+    
+    &:hover {
+        .bar {
+            background-color: #FFC312;
+        }
+    }
+    .bar {
+        transition: all .3s;
+        height: 2px;
+        width: 100%;
+        display: block;
+        background-color: white;
+    }
+
+    .bar:nth-of-type(2) {
+        margin: 8px 0;
+    }
+
+    &--closed {
+        transition-delay: .3s;
+        .bar {
+        float: right;
+        }
+        .bar:nth-of-type(2) {
+        width: 75%;
+        transition-property: margin, height, width;
+        transition-delay: .3s, .3s, 0s;
+        }
+        .bar:nth-of-type(3) {
+        width: 50%;
+        }
+        &:hover {
+        .bar:nth-of-type(2) {
+            width: 100%;
+        }
+        .bar:nth-of-type(3) {
+            width: 100%;
+        }
+        }
+    }
+
+    &--opened {
+        padding-top: 12px;
+        .bar:nth-of-type(1) {
+        transform: rotate(45deg);
+        transition-delay: .3s;
+        height: 2px;
+        }
+        .bar:nth-of-type(2) {
+        opacity: 0;
+        height: 0;
+        margin: -3px;
+        }
+        .bar:nth-of-type(3) {
+        transform: rotate(-45deg);
+        transition-delay: .3s;
+        height: 2px;
+        }
+    }
+}
+
+.menu-links {
+    width: 150px;
+    position: fixed; /* Ajout pour positionner le menu de manière fixe */
+    top: 90px; /* Ajout pour le placer en haut de l'écran */
+    right: 100px; /* Ajout pour le placer à gauche de l'écran */
+    margin: 0; /* Ajout pour enlever les marges par défaut */
+    z-index: 1000; /* Ajout pour placer le menu au dessus de tout le reste */
+    // background-color: #17181C avec une opacité de 0.9
+    background-color: rgba(23, 24, 28, 0.8);
+    &--hidden {
+        display: none;
+    }
+    a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+    a:hover {
+        color: #FFC312;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .burger-menu {
+        right: 10px;
+    }
+    .menu-links {
+        right: 10px;
+    }
+}

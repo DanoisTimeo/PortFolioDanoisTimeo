@@ -1,0 +1,1030 @@
+@charset "UTF-8";
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 2500px;
+  height: 100%;
+  background-color: #17181C;
+  font-family: "Inter", sans-serif;
+  color: white;
+  cursor: context-menu;
+  overflow-x: hidden;
+}
+
+.Corps_de_page {
+  width: 75%;
+  margin: auto;
+}
+.Corps_de_page .acceuil {
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  align-items: center;
+}
+.Corps_de_page .acceuil .text-haut {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  top: 10px;
+  left: 10%;
+}
+.Corps_de_page .acceuil .text-haut p {
+  font-size: 15px;
+  opacity: 0.6;
+  color: #FFC312;
+}
+.Corps_de_page .acceuil .text-haut p a {
+  color: #FFC312;
+}
+.Corps_de_page .acceuil .text-haut p a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.Corps_de_page .acceuil .gauche {
+  width: 40%;
+}
+.Corps_de_page .acceuil .gauche img {
+  width: 100%;
+  border-radius: 100%;
+  border: 10px solid #a2a2a4;
+  box-shadow: 12px 12px 20px black;
+  animation-duration: 0.9s;
+  animation-iteration-count: initial;
+  animation-name: grossirTourner;
+  transition: none;
+}
+.Corps_de_page .acceuil .droite {
+  margin-left: 50px;
+  width: 57%;
+}
+.Corps_de_page .acceuil .droite h2 {
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.Corps_de_page .acceuil .droite h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+.Corps_de_page .acceuil .droite p {
+  font-size: 24px;
+  opacity: 0.8;
+}
+.Corps_de_page .acceuil .droite p .paragraph-long {
+  display: none;
+}
+.Corps_de_page .acceuil .droite p .voirPlus {
+  font-size: 15px;
+  text-decoration-line: underline;
+}
+.Corps_de_page .acceuil .droite p .voirPlus:hover {
+  color: #FFC312;
+  cursor: pointer;
+}
+.Corps_de_page .acceuil .droite .btn_presentation {
+  display: flex;
+}
+.Corps_de_page .acceuil .droite .btn_presentation a {
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 8px 8px 12px black;
+  display: inline-block;
+}
+.Corps_de_page .acceuil .droite .btn_presentation a:nth-child(1) {
+  margin-right: 20px;
+}
+.Corps_de_page .acceuil .droite .btn_presentation a:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+.Corps_de_page .acceuil .droite .btn_presentation .desactive {
+  display: none;
+}
+.Corps_de_page .acceuil .droite .clignote {
+  font-weight: 600;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-name: clignoter;
+  transition: none;
+}
+.Corps_de_page .acceuil .droite .desactive {
+  display: none;
+}
+.Corps_de_page .acceuil .grossis {
+  animation-duration: 0.9s;
+  animation-iteration-count: initial;
+  animation-name: grossir;
+  transition: none;
+}
+.Corps_de_page .parcoursScolaire {
+  margin-top: 100px;
+}
+.Corps_de_page .parcoursScolaire .titre {
+  font-size: 38px;
+  font-weight: 600;
+  border-bottom: 2px solid #FFC312;
+  width: 425px;
+  text-align: center;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte {
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 8px 8px 12px black;
+  display: flex;
+  width: 70%;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .gauche {
+  width: 25%;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .gauche h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFC312;
+  opacity: 0.6;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre {
+  width: 50%;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .droite {
+  width: 25%;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .droite h1 {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.8;
+  text-align: right;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte:hover {
+  scale: 1.05;
+  box-shadow: 8px 8px 20px black;
+}
+.Corps_de_page .parcoursScolaire .lesCartesScolaires .carte:hover .gauche h1 {
+  opacity: 1;
+}
+.Corps_de_page .stages {
+  display: flex;
+  margin-top: 200px;
+}
+.Corps_de_page .stages .gauche {
+  width: 30%;
+}
+.Corps_de_page .stages .gauche h1 {
+  font-size: 38px;
+  font-weight: 600;
+  border-bottom: 2px solid #FFC312;
+  width: 225px;
+  text-align: center;
+}
+.Corps_de_page .stages .gauche .boutons {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.Corps_de_page .stages .gauche .boutons .btn_stage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.Corps_de_page .stages .gauche .boutons .btn_stage svg {
+  display: none;
+}
+.Corps_de_page .stages .gauche .boutons .btn_stage p {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+.Corps_de_page .stages .gauche .boutons .btn_stageBlock {
+  background-color: #FFC312;
+  border-radius: 10px;
+  cursor: context-menu;
+}
+.Corps_de_page .stages .gauche .boutons .btn_stageBlock p {
+  opacity: 1;
+  color: #17181C;
+}
+.Corps_de_page .stages .gauche .boutons .btn_stageBlock svg {
+  display: block;
+}
+.Corps_de_page .stages .droite {
+  width: 70%;
+  margin-top: 25px;
+}
+.Corps_de_page .stages .droite .haut {
+  display: flex;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  height: 145px;
+}
+.Corps_de_page .stages .droite .haut .gauchehaut {
+  min-width: 285px;
+}
+.Corps_de_page .stages .droite .haut .gauchehaut h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.Corps_de_page .stages .droite .haut .gauchehaut h2 {
+  font-size: 18px;
+  opacity: 0.6;
+}
+.Corps_de_page .stages .droite .haut .gauchehaut p {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+.Corps_de_page .stages .droite .haut .gauchehaut a {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.6;
+}
+.Corps_de_page .stages .droite .haut .gauchehaut a:hover {
+  color: #FFC312;
+  opacity: 1;
+}
+.Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile {
+  font-family: arial;
+  text-align: center;
+  position: relative;
+}
+.Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div {
+  font-size: 200px;
+  font-weight: bold;
+  position: absolute;
+  top: -130px;
+  margin-left: 100px;
+  width: 500px;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+  z-index: -1;
+}
+.Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div span {
+  color: #17181C;
+}
+.Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div:nth-child(7) span {
+  color: #FF4400;
+}
+.Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile .deux {
+  animation-name: bouge;
+  animation-duration: 12s;
+  animation-delay: 4s;
+  animation-direction: normal;
+}
+.Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile .cinq {
+  animation-name: bouge2;
+  animation-duration: 12s;
+  animation-delay: 4s;
+  animation-direction: normal;
+}
+.Corps_de_page .stages .droite .haut .droitehautDragonium img {
+  width: 175px;
+  margin-left: 410px;
+  margin-top: -65px;
+}
+.Corps_de_page .stages .droite .bas p {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.8;
+  width: 95%;
+}
+.Corps_de_page .stages .droite .bas .btn_stage {
+  display: flex;
+}
+.Corps_de_page .stages .droite .bas .btn_stage a {
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 8px 8px 12px black;
+  display: inline-block;
+}
+.Corps_de_page .stages .droite .bas .btn_stage a:nth-child(1) {
+  margin-right: 20px;
+}
+.Corps_de_page .stages .droite .bas .btn_stage a:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+.Corps_de_page .epreuveE5 {
+  display: flex;
+  margin-top: 250px;
+}
+.Corps_de_page .epreuveE5 .gauche {
+  width: 30%;
+}
+.Corps_de_page .epreuveE5 .gauche .titre {
+  font-size: 38px;
+  font-weight: 600;
+  border-bottom: 2px solid #FFC312;
+  width: 225px;
+  text-align: center;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet {
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  width: 94%;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet:hover {
+  box-shadow: 8px 8px 16px rgb(0, 0, 1);
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Haut {
+  height: 80%;
+  margin: auto;
+  border-radius: 20px;
+  background: linear-gradient(45deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(135deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(45deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(135deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%;
+  background-blend-mode: luminosity;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Haut h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Haut p {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas {
+  height: 20%;
+  margin: auto;
+  display: flex;
+  align-items: last baseline;
+  margin-top: 12px;
+  padding-left: 20px;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas div {
+  margin-left: 10px;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.Corps_de_page .epreuveE5 .droite {
+  width: 70%;
+  margin-top: 25px;
+}
+.Corps_de_page .epreuveE5 .droite .haut {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  height: 145px;
+}
+.Corps_de_page .epreuveE5 .droite .haut .gauchehaut {
+  width: 70%;
+}
+.Corps_de_page .epreuveE5 .droite .haut .gauchehaut h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.Corps_de_page .epreuveE5 .droite .haut .gauchehaut h2 {
+  font-size: 18px;
+  opacity: 0.6;
+}
+.Corps_de_page .epreuveE5 .droite .haut .gauchehaut p {
+  font-size: 20px;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+.Corps_de_page .epreuveE5 .droite .haut .droitehaut {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.Corps_de_page .epreuveE5 .droite .haut .droitehaut a {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+.Corps_de_page .epreuveE5 .droite .haut .droitehaut a:hover {
+  color: #FFC312;
+  opacity: 1;
+}
+.Corps_de_page .epreuveE5 .droite .bas p {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.8;
+  width: 95%;
+}
+.Corps_de_page .epreuveE5 .droite .bas .btn_stage {
+  display: flex;
+}
+.Corps_de_page .epreuveE5 .droite .bas .btn_stage a {
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 8px 8px 12px black;
+  display: inline-block;
+}
+.Corps_de_page .epreuveE5 .droite .bas .btn_stage a:nth-child(1) {
+  margin-right: 20px;
+}
+.Corps_de_page .epreuveE5 .droite .bas .btn_stage a:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+
+.veilleTechnologique {
+  position: relative; /* Position relative pour pouvoir positionner tsparticles absolument à l'intérieur */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 2500px;
+}
+.veilleTechnologique #tsparticles {
+  position: absolute; /* Position absolue par rapport au conteneur parent */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  margin-top: -10%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.veilleTechnologique .titre {
+  font-size: 38px;
+  font-weight: 600;
+  border-bottom: 2px solid #FFC312;
+  width: 425px;
+  text-align: center;
+  margin: auto;
+  margin-top: 300px;
+}
+.veilleTechnologique .outils {
+  margin: auto;
+  margin-top: 90px;
+  width: 75%;
+  position: relative;
+  z-index: -1;
+}
+.veilleTechnologique .outils h1 {
+  font-size: 30px;
+  font-weight: 600;
+  width: 545px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(255, 195, 18, 0.7411764706);
+}
+.veilleTechnologique .outils p {
+  font-size: 20px;
+  opacity: 0.8;
+  width: 75%;
+}
+.veilleTechnologique .veille {
+  margin: auto;
+  margin-top: 50px;
+  text-align: end;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: -1;
+  position: relative;
+}
+.veilleTechnologique .veille h1 {
+  font-size: 30px;
+  font-weight: 600;
+  width: 260px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(255, 195, 18, 0.7411764706);
+}
+.veilleTechnologique .veille p {
+  font-size: 20px;
+  opacity: 0.8;
+  width: 75%;
+}
+.veilleTechnologique .cookies {
+  margin: auto;
+  margin-top: 50px;
+  width: 75%;
+  position: relative;
+  z-index: -1;
+}
+.veilleTechnologique .cookies h1 {
+  font-size: 30px;
+  font-weight: 600;
+  width: 260px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(255, 195, 18, 0.7411764706);
+}
+.veilleTechnologique .cookies p {
+  font-size: 20px;
+  opacity: 0.8;
+  width: 75%;
+}
+.veilleTechnologique .articles {
+  width: 75%;
+  margin: auto;
+  margin-top: 80px;
+}
+.veilleTechnologique .articles .articlestitre {
+  font-size: 30px;
+  font-weight: 600;
+  width: 220px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(255, 195, 18, 0.7411764706);
+  margin: auto;
+}
+.veilleTechnologique .articles .listeArticles {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle {
+  z-index: 2;
+  padding: 10px;
+  border-radius: 15px;
+  width: 45%;
+  background-color: rgb(41, 43, 51);
+  position: relative;
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle:hover {
+  box-shadow: 8px 8px 16px rgb(0, 0, 1);
+  cursor: pointer;
+  scale: 1.01;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Haut {
+  display: flex;
+  height: 20%;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Haut img {
+  width: 50px;
+  height: 50px;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Haut div {
+  margin-left: 10px;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Haut div h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Haut div p {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Bas {
+  margin-top: 5%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Bas p {
+  font-size: 18px;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Bas div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 130px;
+  border-radius: 15px;
+}
+.veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle .Carte_Bas div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover; /* Rognage de l'image */
+  object-position: center; /* Centrage de l'image */
+}
+
+.desactive {
+  display: none;
+}
+
+@keyframes bouge {
+  0% {
+    transform: rotate(0deg) scaleX(1);
+    opacity: 0.2;
+  }
+  80% {
+    transform: rotate(360deg) scaleX(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg) scaleX(1.1);
+    opacity: 0;
+  }
+}
+@keyframes bouge2 {
+  0% {
+    transform: rotate(0deg) scaleX(1);
+    opacity: 0.2;
+  }
+  80% {
+    transform: rotate(-360deg) scaleX(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(-360deg) scaleX(1.1);
+    opacity: 0;
+  }
+}
+@keyframes grossir {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  90% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes grossirTourner {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  90% {
+    transform: scale(1.1) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div {
+    margin-left: -70px;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautDragonium img {
+    margin-left: 100%;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet {
+    height: 250px;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas {
+    margin-top: auto;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas img {
+    display: none;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas h3 {
+    display: none;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Bas p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1300px) {
+  .Corps_de_page .acceuil {
+    min-height: 715px;
+    align-items: center;
+    justify-content: center;
+  }
+  .Corps_de_page .acceuil .gauche {
+    opacity: 0.3;
+  }
+  .Corps_de_page .acceuil .gauche img {
+    border: 3px solid #a2a2a4;
+  }
+  .Corps_de_page .acceuil .droite {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .Corps_de_page .acceuil .droite .btn_presentation {
+    justify-content: center;
+  }
+  .Corps_de_page .epreuveE5 {
+    flex-direction: column;
+  }
+  .Corps_de_page .epreuveE5 .gauche {
+    width: 100%;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet {
+    width: 70%;
+  }
+  .Corps_de_page .epreuveE5 .droite {
+    width: 100%;
+  }
+  .veilleTechnologique .articles .listeArticles {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .veilleTechnologique .articles .listeArticles .CartesPar2 {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+  }
+}
+@media (max-width: 1200px) {
+  .Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div {
+    font-size: 100px;
+    top: -25px;
+    margin-left: -150px;
+  }
+}
+@media (max-width: 985px) {
+  .Corps_de_page .acceuil .gauche {
+    position: absolute;
+  }
+  .Corps_de_page .stages {
+    flex-direction: column;
+  }
+  .Corps_de_page .stages .gauche {
+    width: 100%;
+  }
+  .Corps_de_page .stages .gauche .boutons {
+    flex-direction: initial;
+    margin-top: 0px;
+  }
+  .Corps_de_page .stages .droite {
+    margin-top: 70px;
+    width: 95%;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div {
+    margin-left: -110px;
+  }
+  .Corps_de_page .stages .droite .bas p {
+    width: 100%;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut {
+    height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .Corps_de_page {
+    width: 95%;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte {
+    width: 95%;
+  }
+  .Corps_de_page .acceuil .text-haut p {
+    font-size: 10px;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div {
+    margin-left: -235px;
+    margin-top: -70px;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautDragonium img {
+    margin-left: 40%;
+  }
+  .Corps_de_page .epreuveE5 .droite .bas p {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .Corps_de_page .acceuil .droite h1 {
+    font-size: 43px;
+  }
+  .Corps_de_page .acceuil .droite h2 {
+    font-size: 25px;
+  }
+  .Corps_de_page .acceuil .droite p {
+    font-size: 20px;
+  }
+  .Corps_de_page .parcoursScolaire .titre {
+    font-size: 35px;
+    border-bottom: 0px;
+    width: 100%;
+    text-decoration: underline;
+    text-decoration-color: #FFC312;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .gauche {
+    display: none;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre {
+    width: 100%;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre h1 {
+    font-size: 23px;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre p {
+    font-size: 16px;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .droite {
+    width: 20%;
+    color: #FFC312;
+  }
+  .Corps_de_page .stages .gauche h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .stages .gauche .boutons {
+    width: 100%;
+  }
+  .Corps_de_page .stages .gauche .boutons .btn_stage p {
+    font-size: 18px;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile div {
+    margin-left: -235px;
+    margin-top: -70px;
+  }
+  .Corps_de_page .stages .droite .bas p {
+    font-size: 17px;
+  }
+  .Corps_de_page .stages .droite .bas .btn_stage a {
+    font-size: 17px;
+  }
+  .Corps_de_page .epreuveE5 .gauche .titre {
+    font-size: 35px;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Haut h1 {
+    font-size: 25px;
+  }
+  .Corps_de_page .epreuveE5 .gauche .Carte_Projet .Carte_Haut p {
+    font-size: 18px;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut {
+    flex-direction: column;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut .gauchehaut {
+    width: 100%;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut .gauchehaut h1 {
+    font-size: 23px;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut .gauchehaut p {
+    font-size: 16px;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut .droitehaut {
+    flex-direction: initial;
+  }
+  .Corps_de_page .epreuveE5 .droite .haut .droitehaut a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .Corps_de_page .epreuveE5 .droite .bas p {
+    font-size: 16px;
+  }
+  .Corps_de_page .epreuveE5 .droite .bas .btn_stage a {
+    font-size: 15px;
+  }
+  .veilleTechnologique .titre {
+    font-size: 30px;
+    width: 320px;
+  }
+  .veilleTechnologique .outils {
+    width: 90%;
+  }
+  .veilleTechnologique .outils h1 {
+    font-size: 24px;
+    text-align: start;
+    max-width: 430px;
+    width: 95%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #FFC312;
+    border-bottom: 0px;
+  }
+  .veilleTechnologique .outils p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .veilleTechnologique .veille {
+    width: 90%;
+  }
+  .veilleTechnologique .veille h1 {
+    font-size: 24px;
+    text-align: end;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #FFC312;
+    border-bottom: 0px;
+  }
+  .veilleTechnologique .veille p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .veilleTechnologique .cookies {
+    width: 90%;
+  }
+  .veilleTechnologique .cookies h1 {
+    font-size: 24px;
+    text-align: start;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #FFC312;
+    border-bottom: 0px;
+  }
+  .veilleTechnologique .cookies p {
+    font-size: 18px;
+    width: 100%;
+  }
+  .veilleTechnologique .articles .listeArticles .CartesPar2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .veilleTechnologique .articles .listeArticles .CartesPar2 .Carte_Aritcle {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .Corps_de_page .stages .droite .haut {
+    height: auto;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautLaTeteDansLaToile {
+    display: none;
+  }
+  .Corps_de_page .stages .droite .haut .droitehautDragonium {
+    display: none;
+  }
+  .Corps_de_page .stages .droite .bas .btn_stage a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .Corps_de_page .acceuil {
+    min-height: 760px;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .gauche h1 {
+    font-size: 20px;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre {
+    width: 75%;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .centre h1 {
+    margin-right: 5px;
+  }
+  .Corps_de_page .parcoursScolaire .lesCartesScolaires .carte .droite {
+    width: 15%;
+  }
+}
+
+/*# sourceMappingURL=BTS.css.map */

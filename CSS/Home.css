@@ -1,0 +1,778 @@
+@charset "UTF-8";
+body {
+  margin: auto;
+  width: 100vw;
+  max-width: 2000px;
+  height: 100%;
+  background-color: #17181C;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.Presentation {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Presentation .Fond_Pres {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+.Presentation .overlay {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  min-height: 40px;
+  background: linear-gradient(180deg, rgba(23, 24, 28, 0) 0%, rgb(23, 24, 28) 100%);
+}
+.Presentation .text_presentation {
+  width: 800px;
+  text-align: center;
+}
+.Presentation .text_presentation h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #FFC312;
+  opacity: 0.8;
+}
+.Presentation .text_presentation h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+.Presentation .text_presentation p {
+  font-size: 30px;
+  opacity: 0.6;
+}
+.Presentation .text_presentation .clignote {
+  font-weight: 600;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-name: clignoter;
+  transition: none;
+}
+.Presentation .text_presentation .scroll {
+  width: 70px;
+  margin-top: 50px;
+  opacity: 0.8;
+  animation-duration: 0.9s;
+  animation-iteration-count: initial;
+  animation-name: grossir;
+  transition: none;
+}
+
+.Corps_de_page {
+  width: 75%;
+  margin: auto;
+}
+.Corps_de_page .MesProjets {
+  margin-top: 170px;
+}
+.Corps_de_page .MesProjets h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 10%;
+}
+.Corps_de_page .Competences {
+  margin-top: 100px;
+}
+.Corps_de_page .Competences h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 10%;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_1 {
+  display: flex;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_1 div:nth-child(2) {
+  margin-left: 50px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 {
+  margin-left: 50px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 div:nth-child(1) {
+  margin-left: 70px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 div:nth-child(2) img {
+  width: 70%;
+  height: 70%;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 div:nth-child(3) {
+  margin-left: 70px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_3 {
+  margin-left: 50px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_4 {
+  margin-left: 50px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_4 div:nth-child(2) {
+  margin-left: 70px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 {
+  display: flex;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 div {
+  margin-left: 50px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 .feuille:nth-child(1) .heightAuto {
+  height: auto;
+}
+.Corps_de_page .Competences .Competences_arbre .branche2 {
+  margin-top: 150px;
+  margin-left: 100px;
+  display: flex;
+}
+.Corps_de_page .Competences .Competences_arbre .branche2 div {
+  margin-left: 50px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche2 div:nth-child(1) {
+  margin-left: 0px;
+}
+.Corps_de_page .Competences .Competences_arbre .branche2 .cv {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  margin-left: 20%;
+  box-shadow: 8px 8px 12px black;
+}
+.Corps_de_page .Competences .Competences_arbre .branche2 .cv:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille {
+  height: 70px;
+  width: 70px;
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5), 0 0 8px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(245, 175, 25, 0.5), 0 0 30px rgba(245, 175, 25, 0.5), 0 0 40px rgba(245, 175, 25, 0.5), 0 0 50px rgba(245, 175, 25, 0.2), 0 0 80px rgba(245, 175, 25, 0.2);
+  cursor: pointer;
+  background-size: 28px 28px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #1d242c;
+  display: flex;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille img {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  opacity: 0.7;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille:hover {
+  scale: 1.25;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille:hover img {
+  opacity: 1;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille-text {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px); /* Position le texte juste en dessous de l'élément */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1d242c;
+  opacity: 0.6;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille:hover .feuille-text {
+  display: block;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille_bloque {
+  border: #675c4e 4px solid;
+  box-shadow: none;
+  cursor: auto;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille_bloque img {
+  opacity: 1;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille_bloque:hover {
+  scale: 1;
+}
+.Corps_de_page .Competences .Competences_arbre .sablier {
+  display: none;
+  position: absolute;
+  margin-left: 0px;
+  top: calc(100% + 15px); /* Position le texte juste en dessous de l'élément */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1d242c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.Corps_de_page .Competences .Competences_arbre .sablier .img_sablier {
+  width: 20px;
+  height: 20px;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille_bloque:hover .sablier {
+  display: block;
+}
+.Corps_de_page .Competences .Competences_arbre .feuille_bloque:hover .sablier .img_sablier {
+  animation: rotation 5s infinite linear;
+}
+.Corps_de_page .Page_Contact {
+  display: flex;
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  border-radius: 20px;
+  padding: 20px;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche {
+  width: 45%;
+  margin: auto;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche p {
+  font-size: 17px;
+  opacity: 0.6;
+  font-weight: 400;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche input, .Corps_de_page .Page_Contact .Page_Contact_Gauche textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px;
+  margin-top: 12px;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .nom_prenom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .nom_prenom input {
+  width: 48%;
+  margin-top: 0px;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .btn-envoyer {
+  font-weight: 500;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  box-shadow: 4px 4px 12px black;
+  transition: 0.4s;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .btn-envoyer:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 8px 8px 14px black;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .msgContact {
+  display: none;
+  margin-top: 20px;
+  color: #FFC312;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .msgContact_erreur {
+  color: #ff7d12;
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 1;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .msgContactOK {
+  opacity: 1;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact {
+  display: none;
+  margin-top: 40px;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact h2 {
+  font-size: 25px;
+  font-weight: 500;
+  /*span {
+      color: #FFC312;
+  }*/
+}
+.Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #FFC312;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Droite {
+  width: 50%;
+  border-radius: 20px;
+  background: linear-gradient(176deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 78%, rgb(220, 128, 178) 83%, rgb(252, 176, 69) 88%, rgb(216, 92, 42) 100%), linear-gradient(221deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 53%, rgb(220, 128, 178) 66%, rgb(252, 176, 69) 80%, rgb(226, 114, 49) 91%, rgb(216, 92, 42) 100%);
+  background-blend-mode: overlay; /* Mélange des arrière-plans */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Droite h2 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Droite h2 span {
+  color: #FFC312;
+}
+.Corps_de_page .Page_Contact .Page_Contact_Droite h1 {
+  font-size: 3vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Carousel-Conteneur {
+  overflow: hidden;
+  display: flex;
+  height: 430px;
+  width: 100vw;
+  align-items: center;
+}
+.Carousel-Conteneur .btnSliderNext, .Carousel-Conteneur .btnSliderPrev {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 2;
+}
+.Carousel-Conteneur .btnSliderNext:hover, .Carousel-Conteneur .btnSliderPrev:hover {
+  cursor: pointer;
+}
+.Carousel-Conteneur .btnSliderNext {
+  margin-left: 90%;
+}
+.Carousel-Conteneur .btnSliderPrev {
+  margin-left: 10%;
+}
+.Carousel-Conteneur .Liste_Projets {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet {
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  width: 650px;
+  height: 387px;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet:hover {
+  box-shadow: 8px 8px 16px rgb(0, 0, 1);
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Haut {
+  height: 80%;
+  margin: auto;
+  border-radius: 20px;
+  background: rgb(212, 206, 255);
+  background: linear-gradient(167deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 57%, rgb(177, 99, 205) 78%, rgb(220, 128, 178) 83%, rgb(252, 176, 69) 88%, rgb(216, 92, 42) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Haut h1 {
+  font-size: 58px;
+  font-weight: 800;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Haut p {
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas {
+  height: 20%;
+  margin: auto;
+  display: flex;
+  align-items: last baseline;
+  margin-top: 12px;
+  padding-left: 20px;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas div {
+  margin-left: 10px;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet_1 {
+  margin-left: 8%;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet_1 .Carte_Haut {
+  background: linear-gradient(221deg, rgb(0, 25, 59) 0%, rgb(9, 58, 126) 12%, rgb(141, 179, 242) 39%, rgb(9, 58, 126) 84%, rgb(20, 40, 69) 100%), linear-gradient(354deg, rgb(0, 25, 59) 0%, rgb(24, 91, 185) 24%, rgb(132, 152, 185) 39%, rgb(19, 71, 143) 67%, rgb(9, 58, 126) 83%, rgb(20, 40, 69) 100%);
+  background-blend-mode: overlay; /* Mode de fusion */
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet_2 .Carte_Haut {
+  background: rgb(212, 206, 255);
+  background: linear-gradient(137deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 78%, rgb(220, 128, 178) 83%, rgb(252, 176, 69) 88%, rgb(216, 92, 42) 100%);
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet_3 .Carte_Haut {
+  background: linear-gradient(45deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(135deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(45deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(135deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%;
+  background-blend-mode: luminosity;
+}
+.Carousel-Conteneur .Liste_Projets .Carte_Projet_4 .Carte_Haut {
+  background: linear-gradient(176deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 78%, rgb(220, 128, 178) 83%, rgb(252, 176, 69) 88%, rgb(216, 92, 42) 100%), linear-gradient(221deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 53%, rgb(220, 128, 178) 66%, rgb(252, 176, 69) 80%, rgb(226, 114, 49) 91%, rgb(216, 92, 42) 100%);
+  background-blend-mode: overlay; /* Mélange des arrière-plans */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* Début de la rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Fin de la rotation */
+  }
+}
+.desactive {
+  display: none;
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes grossir {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 2150px) {
+  .Corps_de_page .Page_Contact .Page_Contact_Droite h2 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Droite h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1450px) {
+  .Corps_de_page .MesProjets {
+    margin-top: 100px;
+  }
+  .Corps_de_page .MesProjets h2 {
+    margin-left: 0%;
+  }
+  .Corps_de_page .Competences {
+    margin-top: 100px;
+  }
+  .Corps_de_page .Competences h2 {
+    margin-left: 0%;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 {
+    margin-left: 0px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1250px) {
+  .Corps_de_page {
+    width: 90%;
+  }
+  .Corps_de_page .MesProjets {
+    margin-top: 100px;
+  }
+  .Corps_de_page .MesProjets h2 {
+    margin-left: 10%;
+  }
+  .Corps_de_page .Competences {
+    margin-top: 100px;
+  }
+  .Corps_de_page .Competences h2 {
+    margin-left: 10%;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 {
+    margin-left: 3%;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 {
+    margin-left: 3%;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 .cv {
+    margin-left: 15%;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet_1 {
+    margin-left: 3%;
+  }
+  .Carousel-Conteneur .btnSliderPrev {
+    margin-left: 3%;
+  }
+}
+@media (max-width: 1150px) {
+  .Corps_de_page {
+    width: 100%;
+  }
+  .Corps_de_page .Page_Contact {
+    width: 90%;
+    margin: auto;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 1100px) {
+  .Corps_de_page .Competences .Competences_arbre {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_1 {
+    flex-direction: column;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_1 div:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 {
+    margin-left: 0px;
+    margin-top: 50px;
+    height: auto;
+    width: 270px;
+    flex-direction: row-reverse;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 div:nth-child(1) {
+    margin-left: 0px;
+    margin-top: 70px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_2 div:nth-child(3) {
+    margin-left: 0px;
+    margin-top: 70px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_3 {
+    margin-left: 0px;
+    margin-top: 50px;
+    height: auto;
+    width: 350px;
+    flex-direction: row-reverse;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_4 {
+    margin-left: 0px;
+    margin-top: 50px;
+    height: auto;
+    width: 270px;
+    flex-direction: row-reverse;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_4 div:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 70px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 {
+    flex-direction: column;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 div {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 div:nth-child(3) {
+    display: none;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 div {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 div:nth-child(1) {
+    margin-top: 0px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 .cv {
+    margin-top: 150px;
+    margin-left: 0px;
+  }
+  .Corps_de_page .Page_Contact {
+    width: 70%;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche {
+    width: 90%;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact {
+    display: block;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Droite {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .Carousel-Conteneur {
+    height: 357px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet {
+    width: 500px;
+    height: 300px;
+  }
+  .Presentation .text_presentation {
+    width: 97%;
+  }
+}
+@media (max-width: 650px) {
+  .Corps_de_page .Competences .Competences_arbre {
+    flex-direction: column;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 {
+    margin-left: 0%;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche1 .branche_1_5 div:nth-child(2) {
+    display: none;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 {
+    margin-top: 50px;
+  }
+  .Corps_de_page .Competences .Competences_arbre .branche2 .cv {
+    margin-top: 50px;
+  }
+  .Corps_de_page .Page_Contact {
+    width: 90%;
+  }
+  .Presentation .text_presentation h2 {
+    font-size: 30px;
+  }
+  .Presentation .text_presentation h1 {
+    font-size: 40px;
+  }
+  .Presentation .text_presentation p {
+    font-size: 15px;
+  }
+  .Presentation .text_presentation .scroll {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet {
+    width: 430px;
+    height: 300px;
+  }
+}
+@media (max-width: 550px) {
+  .Corps_de_page .MesProjets h2 {
+    margin-left: 4%;
+  }
+  .Corps_de_page .Competences h2 {
+    margin-left: 4%;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche {
+    width: 100%;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche .nom_prenom {
+    margin-top: 38px;
+    flex-direction: column;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche .nom_prenom input {
+    width: 100%;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .Carousel-Conteneur {
+    height: 260px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet {
+    width: 280px;
+    height: 220px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Haut h1 {
+    font-size: 35px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Haut p {
+    font-size: 15px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas {
+    margin-top: 0px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas img {
+    width: 30px;
+    height: 30px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas h3 {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .Carousel-Conteneur .Liste_Projets .Carte_Projet .Carte_Bas p {
+    font-size: 9px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .Corps_de_page .Competences {
+    display: none;
+  }
+  .Corps_de_page .Page_Contact {
+    margin-top: 30px;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact {
+    margin-top: 30px;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact h2 {
+    font-size: 5vw;
+  }
+  .Corps_de_page .Page_Contact .Page_Contact_Gauche .emailContact h1 {
+    font-size: 7vw;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

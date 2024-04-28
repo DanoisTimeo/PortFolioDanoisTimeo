@@ -1,0 +1,959 @@
+body {
+    margin: auto;
+    width: 100vw;
+    max-width: 2000px;
+    height: 100%;
+    background-color: #17181C;
+    font-family: 'Inter', sans-serif;
+    color: white; 
+}
+
+.Presentation {
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .Fond_Pres {
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.4;
+    }
+    .overlay {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        min-height: 40px; // Hauteur de la superposition
+        background: linear-gradient(180deg, rgba(23,24,28,0) 0%, rgba(23,24,28,1) 100%);
+    }
+    .text_presentation {
+        width: 800px;
+        text-align: center;
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            color: #FFC312;
+            opacity: 0.8;
+        }
+        h1 {
+            // Taille de la police 48px en semi-bold
+            font-size: 60px;
+            font-weight: 600;
+        }
+        p {
+            // Taille de la police 17px en regular avec 60% d'oppacité
+            font-size: 30px;
+            opacity: 0.6;
+        }
+        .clignote {
+            font-weight: 600;
+            animation-duration: .9s;
+            animation-iteration-count: infinite;
+            animation-name: clignoter;
+            transition: none;
+        }
+        .scroll {
+            width: 70px;
+            margin-top: 50px;
+            opacity: 0.8;
+            animation-duration: .9s;
+            animation-iteration-count: initial;
+            animation-name: grossir;
+            transition: none;
+        }
+    }
+}
+
+.Corps_de_page {
+    width: 75%;
+    margin: auto;
+
+    .MesProjets {
+        margin-top: 170px;
+        h2 {
+            // Taille de la police 40px en semi-bold
+            font-size: 40px;
+            font-weight: 600;
+            margin-left: 10%;
+        }
+    }
+
+    .Competences {
+        margin-top: 100px;
+        h2{
+            // Taille de la police 40px en semi-bold
+            font-size: 40px;
+            font-weight: 600;
+            margin-left: 10%;
+        }
+
+        .Competences_arbre {
+            .branche1 {
+                margin-top: 50px;
+                display: flex;
+                align-items: center;
+                margin-left: 100px;
+                .branche_1_1 {
+                    display: flex;
+                    div:nth-child(2) {
+                        margin-left: 50px;
+                    }
+                }
+                .branche_1_2 {
+                    margin-left: 50px;
+                    height: 270px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    div:nth-child(1) {
+                        margin-left: 70px;
+                    }
+                    div:nth-child(2) {
+                        img {
+                            width: 70%;
+                            height: 70%;
+                        }
+                    }
+                    div:nth-child(3) {
+                        margin-left: 70px;
+                    }
+                }
+                .branche_1_3 {
+                    margin-left: 50px;
+                    height: 350px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .branche_1_4 {
+                    margin-left: 50px;
+                    height: 270px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    div:nth-child(2) {
+                        margin-left: 70px;
+                    }
+                }
+                .branche_1_5 {
+                    display: flex;
+                    div {
+                        margin-left: 50px;
+                    }
+                    .feuille {
+                        &:nth-child(1) {
+                            .heightAuto {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .branche2 {
+                margin-top: 150px;
+                margin-left: 100px;
+                display: flex;
+
+                div {
+                    margin-left: 50px;
+                }
+                div:nth-child(1){
+                    margin-left: 0px;
+                }
+
+                .cv {
+                    padding: .75rem 1rem;
+                    border-radius: .5rem;
+                    background-color: transparent;
+                    border: 2px solid #FFC312;
+                    color: #FFC312;
+                    font-size: 24px;
+                    font-weight: 400;
+                    transition: .4s;
+                    text-decoration: none;
+                    margin-left: 20%;
+                    box-shadow: 8px 8px 12px black;
+                }
+                .cv:hover {
+                    background-color: #FFC312;
+                    color: #1d242c;
+                    box-shadow: 12px 12px 20px black;
+                }
+            }
+
+            .feuille {
+                height: 70px;
+                width: 70px;
+                margin: 0;
+                border-radius: 50%;
+                box-shadow:
+                    0 0 2px rgba(255, 255, 255, 0.5),
+                    0 0 8px rgba(255, 255, 255, 0.5),
+                    0 0 10px rgba(255, 255, 255, 0.5),
+                    0 0 20px rgba(245, 175, 25, 0.5),
+                    0 0 30px rgba(245, 175, 25, 0.5),
+                    0 0 40px rgba(245, 175, 25, 0.5),
+                    0 0 50px rgba(245, 175, 25, 0.2),
+                    0 0 80px rgba(245, 175, 25, 0.2);
+                cursor: pointer;
+                background-size: 28px 28px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: #1d242c;
+                display: flex;
+
+                img {
+                    margin: auto;
+                    width: 80%;
+                    height: 80%;
+                    opacity: 0.7;
+                }
+            }
+
+            .feuille:hover {
+                scale: 1.25;
+
+                img {
+                    opacity: 1;
+                }
+            }
+
+            .feuille-text {
+                display: none;
+                position: absolute;
+                top: calc(100% + 5px); /* Position le texte juste en dessous de l'élément */
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #1d242c;
+                opacity: 0.6;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                white-space: nowrap;
+            }
+            
+            .feuille:hover .feuille-text {
+                display: block;
+            }
+
+            .feuille_bloque {
+                border: #675c4e 4px solid;
+                box-shadow: none;
+                cursor: auto;
+
+                img {
+                    opacity: 1;
+                }
+            }
+            .feuille_bloque:hover {
+                scale: 1;
+            }
+
+            .sablier {
+                display: none;
+                position: absolute;
+                margin-left: 0px;
+                top: calc(100% + 15px); /* Position le texte juste en dessous de l'élément */
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #1d242c;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                white-space: nowrap;
+
+                .img_sablier {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .feuille_bloque:hover .sablier {
+                display: block;
+
+                .img_sablier {
+                    animation: rotation 5s infinite linear;
+                }
+            }
+        }
+    }
+
+    .Page_Contact{
+        display: flex;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 0.03);
+        box-shadow: 4px 4px 12px rgb(0, 0, 1);
+        border-radius: 20px;
+        padding: 20px;
+        .Page_Contact_Gauche{
+            width: 45%;
+            margin: auto;
+    
+            h1{
+                // Taille de la police 40px en semi-bold
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p{
+                // Taille de la police 17px en regular avec 60% d'oppacité
+                font-size: 17px;
+                opacity: 0.6;
+                font-weight: 400;
+            }
+
+            input, textarea {
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background-color: rgba(255, 255, 255, 0.05);
+                color: rgba(255, 255, 255, 0.6);
+                font-size: 20px;
+                font-weight: 400;
+                padding: 15px;
+                margin-top: 12px;
+            }
+
+            .nom_prenom {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                input {
+                    width: 48%;
+                    margin-top: 0px;
+                }
+            }
+
+            .btn-envoyer {
+                //medium 
+                font-weight: 500;
+                border: 2px solid #FFC312;
+                color: #FFC312;
+                box-shadow: 4px 4px 12px black; 
+                transition: .4s;
+            }
+            .btn-envoyer:hover {
+                background-color: #FFC312;
+                color: #1d242c;
+                box-shadow: 8px 8px 14px black;
+            }
+
+            .msgContact  {
+                display: none;
+                margin-top: 20px;
+                color: #FFC312;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .msgContact_erreur {
+                color: #ff7d12;
+                font-size: 20px;
+                font-weight: 500;
+                opacity: 1;
+            }
+            .msgContactOK {
+                opacity: 1;
+            }
+            .emailContact {
+                display: none;
+                margin-top: 40px;
+                h2 {
+                    font-size: 25px;
+                    font-weight: 500;
+                    /*span {
+                        color: #FFC312;
+                    }*/
+                }
+                h1 {
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #FFC312;
+                }
+            }
+        }
+        .Page_Contact_Droite{
+            width: 50%;
+            border-radius: 20px;
+            background: linear-gradient(176deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 78%, rgba(220,128,178,1) 83%, rgba(252,176,69,1) 88%, rgba(216,92,42,1) 100%), 
+            linear-gradient(221deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 53%, rgba(220,128,178,1) 66%, rgba(252,176,69,1) 80%, rgba(226,114,49,1) 91%, rgba(216,92,42,1) 100%);
+            background-blend-mode: overlay; /* Mélange des arrière-plans */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+            h2 {
+                // Taille de la police 40px en semi-bold
+                font-size: 1.5vw;
+                font-weight: 500;
+                text-align: center;
+                span {
+                    color: #FFC312;
+                }
+            }
+            h1 {
+                // Taille de la police 48px en semi-bold
+                font-size: 3vw;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.Carousel-Conteneur {
+    overflow: hidden; // Assurez-vous que les cartes dupliquées sont masquées
+    display: flex;
+    height: 430px;
+    width: 100vw; // Utiliser la largeur de la fenêtre
+    align-items: center;
+
+    .btnSliderNext, .btnSliderPrev{
+        width:40px;
+        height:40px;
+        text-align:center;
+        opacity:.7;
+        position: absolute;
+        z-index: 2;
+    }
+      
+    .btnSliderNext:hover, .btnSliderPrev:hover{
+        cursor:pointer;
+    }
+
+    .btnSliderNext{
+        margin-left: 90%;
+    }
+
+    .btnSliderPrev{
+        margin-left: 10%;
+    }
+
+    .Liste_Projets {
+        display: flex;
+        transition: transform 0.3s ease;
+
+        .Carte_Projet {
+            background-color: rgba(255, 255, 255, 0.03);
+            box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+            width: 650px;
+            height: 387px;
+            border-radius: 20px;
+            margin-right: 20px;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 8px 8px 16px rgb(0, 0, 0.5);
+            }
+
+            .Carte_Haut {
+                height: 80%;
+                margin: auto;
+                border-radius: 20px;
+                background: rgb(212,206,255);
+                background: linear-gradient(167deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 57%, rgba(177,99,205,1) 78%, rgba(220,128,178,1) 83%, rgba(252,176,69,1) 88%, rgba(216,92,42,1) 100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+                h1{
+                    // Taille de la police 58px en Black
+                    font-size : 58px;
+                    font-weight: 800;
+                }
+
+                p {
+                    // Taille de la police 24px en regular avec 60% d'oppacité
+                    font-size: 24px;
+                    font-weight: 400;
+                    opacity: 0.6;
+                }
+            }
+
+            .Carte_Bas {
+                height: 20%;
+                margin: auto;
+                display: flex;
+                align-items: last baseline;
+                margin-top: 12px;
+                padding-left: 20px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    opacity: 0.50;
+                }
+                div {
+                    margin-left: 10px;
+                }
+                h3 {
+                    // Taille de la police 18px en semi-bold
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                p{
+                    // Taille de la police 16px en regular avec 60% d'oppacité
+                    font-size: 16px;
+                    font-weight: 400;
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .Carte_Projet_1{  
+            margin-left: 8%;
+
+            .Carte_Haut {
+                background: 
+                    linear-gradient(221deg, rgba(0,25,59,1) 0%, rgba(9,58,126,1) 12%, rgba(141,179,242,1) 39%, rgba(9,58,126,1) 84%, rgba(20,40,69,1) 100%),
+                    linear-gradient(354deg, rgba(0,25,59,1) 0%, rgba(24,91,185,1) 24%, rgba(132,152,185,1) 39%, rgba(19,71,143,1) 67%, rgba(9,58,126,1) 83%, rgba(20,40,69,1) 100%);
+                background-blend-mode: overlay; /* Mode de fusion */
+            }
+        }
+
+        .Carte_Projet_2{
+            .Carte_Haut {
+                background: rgb(212,206,255);
+                background: linear-gradient(137deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 78%, rgba(220,128,178,1) 83%, rgba(252,176,69,1) 88%, rgba(216,92,42,1) 100%); 
+            }
+        }
+
+        .Carte_Projet_3{
+            .Carte_Haut {
+                background: 
+                linear-gradient(45deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                linear-gradient(135deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                linear-gradient(45deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                linear-gradient(135deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%;
+                background-blend-mode: luminosity;
+            }
+        }
+
+        .Carte_Projet_4{
+            .Carte_Haut {
+                background: linear-gradient(176deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 78%, rgba(220,128,178,1) 83%, rgba(252,176,69,1) 88%, rgba(216,92,42,1) 100%), 
+                linear-gradient(221deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 53%, rgba(220,128,178,1) 66%, rgba(252,176,69,1) 80%, rgba(226,114,49,1) 91%, rgba(216,92,42,1) 100%);
+                background-blend-mode: overlay; /* Mélange des arrière-plans */
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg); /* Début de la rotation */
+    }
+    to {
+        transform: rotate(360deg); /* Fin de la rotation */
+    }
+}
+
+.desactive {
+    display: none;
+}
+
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes grossir {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// Pour les ecrans de plus de 2150px
+@media (min-width: 2150px) {    
+    .Corps_de_page {
+        .Page_Contact {
+            .Page_Contact_Droite{
+                h2 {
+                    font-size: 35px;
+                }
+                h1 {
+                    font-size: 60px;
+                }
+            }
+        }
+    }
+}
+
+// Pour les ecrans de moin de 1450px 
+@media (max-width: 1450px) {
+    .Corps_de_page {
+
+        .MesProjets {
+            margin-top: 100px;
+            h2 {
+                margin-left: 0%;
+            }
+        }
+
+        .Competences {
+            margin-top: 100px;
+            h2 {
+                margin-left: 0%;
+            }
+
+            .Competences_arbre {
+                .branche1 {
+                    margin-left: 0px;
+                }
+                .branche2 {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+// Pour les ecrans de moin de 1200px
+@media (max-width: 1250px) { 
+    .Corps_de_page {
+        width: 90%;
+        .MesProjets {
+            margin-top: 100px;
+            h2 {
+                margin-left: 10%;
+            }
+        }
+
+        .Competences {
+            margin-top: 100px;
+            h2 {
+                margin-left: 10%;
+            }
+
+            .Competences_arbre {
+                .branche1 {
+                    margin-left: 3%;
+                }
+                .branche2 {
+                    margin-left: 3%;
+                    .cv {
+                        margin-left: 15%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .Carousel-Conteneur {
+        .Liste_Projets {
+            .Carte_Projet_1 {
+                margin-left: 3%;
+            }
+        }
+
+        .btnSliderPrev{
+            margin-left: 3%;
+        }
+    }
+}
+
+// Pour les ecrans de moin de 1150px
+
+@media (max-width: 1150px) {
+    .Corps_de_page {
+        width: 100%;
+
+        .Page_Contact {
+            width: 90%;
+            margin: auto;
+            margin-top: 90px;
+        }
+    }
+}
+
+// Pour les ecrans de moin de 1100px
+
+@media (max-width: 1100px) {
+    .Corps_de_page {
+
+        .Competences {
+            .Competences_arbre {
+                display: flex;
+                margin-top: 50px;
+                justify-content: space-around;
+                .branche1 {
+                    flex-direction: column;
+                    margin-top: 0px;
+
+                    .branche_1_1 {
+                        flex-direction: column;
+                        div:nth-child(2) {
+                            margin-left: 0px;
+                            margin-top: 50px;
+                        }
+                    }
+
+                    .branche_1_2 {
+                        margin-left: 0px;
+                        margin-top: 50px;
+                        height: auto;
+                        width: 270px;
+                        flex-direction: row-reverse;
+                        div:nth-child(1) {
+                            margin-left: 0px;
+                            margin-top: 70px;
+                        }
+                        div:nth-child(3) {
+                            margin-left: 0px;
+                            margin-top: 70px;
+                        }
+                    }
+
+                    .branche_1_3 {
+                        margin-left: 0px;
+                        margin-top: 50px;
+                        height: auto;
+                        width: 350px;
+                        flex-direction: row-reverse;
+                    }
+
+                    .branche_1_4 {
+                        margin-left: 0px;
+                        margin-top: 50px;
+                        height: auto;
+                        width: 270px;
+                        flex-direction: row-reverse;
+                        div:nth-child(2) {
+                            margin-left: 0px;
+                            margin-top: 70px;
+                        }
+                    }
+
+                    .branche_1_5 {
+                        flex-direction: column;
+                        div {
+                            margin-left: 0px;
+                            margin-top: 50px;
+                        }
+
+                        div:nth-child(3) {
+                            display: none;
+                        }
+                    }
+                }
+                .branche2 {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 0px;
+                    margin-left: 0px;
+
+                    div {
+                        margin-left: 0px;
+                        margin-top: 50px;
+                    }
+                    div:nth-child(1){
+                        margin-top: 0px;
+                    }
+
+                    .cv { 
+                        margin-top: 150px;
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+
+        .Page_Contact {
+            width: 70%;
+            .Page_Contact_Gauche {
+                width: 90%;
+                .emailContact {
+                    display: block;
+                }
+            }
+            .Page_Contact_Droite {
+                display: none;
+            }
+        }
+    }
+}
+
+// Pour les ecrans de moin de 800px
+@media (max-width: 800px) { 
+    .Carousel-Conteneur {
+        height: 357px;
+        .Liste_Projets{
+            .Carte_Projet {
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+    .Presentation {
+        .text_presentation {
+            width: 97%;
+        }
+    }
+}
+// Pour les ecrans de moin de 650px
+@media (max-width: 650px) { 
+    .Corps_de_page {
+        .Competences {
+            .Competences_arbre {
+                flex-direction: column;
+                .branche1 {
+                    margin-left: 0%;
+                    .branche_1_5 {
+                        div:nth-child(2) {
+                            display: none;
+                        }
+                    }
+                }
+                .branche2 {
+                    margin-top: 50px;
+                    .cv {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+
+        .Page_Contact {
+            width: 90%;
+        }
+    }
+    .Presentation {
+        .text_presentation {
+            h2 {
+                font-size: 30px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 15px;
+            }
+            .scroll {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+// Pour les ecrans de moin de 800px
+@media (max-width: 600px) { 
+    .Carousel-Conteneur {
+        .Liste_Projets{
+            .Carte_Projet {
+                width: 430px;
+                height: 300px;
+            }
+        }
+    }
+    
+}
+
+// Pour les ecrans de moin de 550px
+@media (max-width: 550px) { 
+    .Corps_de_page {
+        .MesProjets {
+            h2 {
+                margin-left: 4%;
+            }
+        }
+        .Competences {
+            h2 {
+                margin-left: 4%;
+            }
+        }
+        .Page_Contact {
+            .Page_Contact_Gauche {
+                width: 100%;
+                .nom_prenom {
+                    margin-top: 38px;
+                    flex-direction: column;
+                    input {
+                        width: 100%;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ // Pour les ecrans de moin de 500px
+@media (max-width: 500px) { 
+    .Carousel-Conteneur {
+        height: 260px;
+        .Liste_Projets{
+            .Carte_Projet {
+                width: 280px;
+                height: 220px;
+                .Carte_Haut {
+                    h1 {
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+                .Carte_Bas {
+                    margin-top: 0px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    h3 {
+                        font-size: 15px;
+                        margin-bottom: 0px;
+                    }
+                    p {
+                        font-size: 9px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+// Pour les ecrans de moin de 400px
+@media (max-width: 400px) { 
+    .Corps_de_page {
+        .Competences {
+            display: none;
+        }
+        .Page_Contact {
+            margin-top: 30px;
+            .Page_Contact_Gauche {
+                .emailContact {
+                    margin-top: 30px;
+                    h2 {
+                        font-size: 5vw;
+                    }
+                    h1 {
+                        font-size: 7vw;
+                    }
+                }
+            }
+        }
+    }
+}

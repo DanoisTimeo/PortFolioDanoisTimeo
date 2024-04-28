@@ -1,0 +1,1794 @@
+@charset "UTF-8";
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 3000px;
+  height: 100%;
+  background-color: #17181C;
+  font-family: "Inter", sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.Corps_de_page {
+  width: 75%;
+  margin: auto;
+}
+.Corps_de_page .Haut_de_page {
+  width: 500px;
+  margin-left: 10%;
+  margin-top: 95px;
+}
+.Corps_de_page .Haut_de_page h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Haut_de_page p {
+  font-size: 20px;
+  opacity: 0.6;
+}
+.Corps_de_page .Haut_de_page .Liste_btn_projets {
+  display: flex;
+  margin-top: 50px;
+}
+.Corps_de_page .Haut_de_page .Liste_btn_projets a {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 2px 2px 7px rgb(0, 0, 1);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 25px;
+  transition: 0.4s;
+  width: 79px;
+  text-align: center;
+}
+.Corps_de_page .Haut_de_page .Liste_btn_projets a:hover {
+  color: #FFC312;
+  box-shadow: 8px 8px 14px black;
+  scale: 1.1;
+}
+.Corps_de_page .Haut_de_page .Liste_btn_projets a:nth-child(1) {
+  margin-left: -15px;
+}
+.Corps_de_page .carte_1 {
+  background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  width: 90%;
+  height: 600px;
+  border-radius: 20px;
+  padding: 5px;
+  margin: auto;
+  margin-top: 90px;
+}
+.Corps_de_page .carte_1 .background_Carte_1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.Corps_de_page .carte_1 .background_Carte_1 h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+.Corps_de_page .carte_1 .background_Carte_1 p {
+  font-size: 32px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.Corps_de_page .Projet1 .carte_1 .background_Carte_1 {
+  background: linear-gradient(221deg, rgb(0, 25, 59) 0%, rgb(9, 58, 126) 12%, rgb(141, 179, 242) 39%, rgb(9, 58, 126) 84%, rgb(20, 40, 69) 100%), linear-gradient(354deg, rgb(0, 25, 59) 0%, rgb(24, 91, 185) 24%, rgb(132, 152, 185) 39%, rgb(19, 71, 143) 67%, rgb(9, 58, 126) 83%, rgb(20, 40, 69) 100%);
+  background-blend-mode: overlay; /* Mode de fusion */
+}
+.Corps_de_page .Projet1 .partie2 {
+  display: flex;
+  margin-top: 110px;
+}
+.Corps_de_page .Projet1 .partie2 .gauche {
+  display: flex;
+}
+.Corps_de_page .Projet1 .partie2 .gauche div {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 350px;
+  height: 650px;
+  border-radius: 20px;
+  position: relative;
+}
+.Corps_de_page .Projet1 .partie2 .gauche div:nth-child(1):after {
+  content: "";
+  position: absolute;
+  bottom: -58px;
+  right: -34px;
+  width: 200px;
+  height: 550px;
+  background: linear-gradient(to bottom right, rgba(17, 17, 17, 0), rgb(23, 24, 28));
+  filter: blur(20px);
+  z-index: 1;
+  border-radius: 0 0 20px 0;
+}
+.Corps_de_page .Projet1 .partie2 .gauche div:nth-child(2) {
+  z-index: 2;
+  position: absolute;
+  margin-left: 154px;
+  margin-top: 106px;
+}
+.Corps_de_page .Projet1 .partie2 .gauche div:nth-child(2):after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 200px;
+  height: 550px;
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+  filter: blur(6.2px);
+  z-index: 1;
+  border-radius: 20px 0 20px 0;
+}
+.Corps_de_page .Projet1 .partie2 .droite {
+  width: 505px;
+  margin-top: 106px;
+  margin-left: 300px;
+}
+.Corps_de_page .Projet1 .partie2 .droite h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet1 .partie2 .droite h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet1 .partie2 .droite p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet1 .partie2 .droite a {
+  text-decoration: none;
+  color: white;
+}
+.Corps_de_page .Projet1 .partie3 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet1 .partie3 .fondPartie3 {
+  position: absolute;
+  margin-left: -30px;
+  background-color: rgb(29, 44, 51);
+  border-radius: 30px;
+  width: 80%;
+  height: 800px;
+  transform: skewY(-8deg);
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -100px;
+}
+.Corps_de_page .Projet1 .partie3 .TextPartie3 {
+  text-align: center;
+  margin-top: 250px;
+}
+.Corps_de_page .Projet1 .partie3 .TextPartie3 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: auto;
+}
+.Corps_de_page .Projet1 .partie3 .TextPartie3 h1:nth-child(2) {
+  opacity: 0.6;
+}
+.Corps_de_page .Projet1 .partie3 .TextPartie3 p {
+  font-size: 24px;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  margin-top: 35px;
+  text-align: justify;
+}
+.Corps_de_page .Projet1 .partie3 .CartePartie3 {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(23, 24, 28);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  border-radius: 20px;
+  padding: 10px;
+}
+.Corps_de_page .Projet1 .partie3 .CartePartie3 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet1 .partie3 .CartePartie3 .BasCartePartie3 {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.Corps_de_page .Projet1 .partie3 .CartePartie3 .BasCartePartie3 img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet1 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet1 .partie4 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet1 .partie4 .fondPartie4 {
+  position: absolute;
+  right: 0;
+  background: radial-gradient(circle at calc(100% - 350px) -50px, rgb(145, 60, 60) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+  width: 1335px;
+  height: 800px;
+  transform: skewY(-8deg);
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -100px;
+}
+.Corps_de_page .Projet1 .partie4 .TextPartie4 {
+  text-align: end;
+  margin-top: 250px;
+}
+.Corps_de_page .Projet1 .partie4 .TextPartie4 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: auto;
+}
+.Corps_de_page .Projet1 .partie4 .TextPartie4 h1:nth-child(2) {
+  opacity: 0.6;
+}
+.Corps_de_page .Projet1 .partie4 .TextPartie4 p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 20%;
+  margin-top: 35px;
+  width: 80%;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet1 .partie4 .ImagesPartie4 img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  margin-top: 50px;
+  opacity: 1;
+}
+.Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(1) {
+  width: 33%;
+  margin-top: -160px;
+  margin-left: 10px;
+}
+.Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(2) {
+  width: 340px;
+  margin-top: 250px;
+  margin-left: 60px;
+}
+.Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(3) {
+  width: 28%;
+  margin-top: -220px;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 {
+  overflow-x: hidden;
+  display: flex;
+  margin-top: -1000px;
+  left: -50px;
+  width: 1100px;
+  align-items: center;
+  position: absolute;
+  transform: rotate(144deg);
+  z-index: -1;
+}
+.Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 8px -8px 12px rgb(0, 0, 1);
+  width: 200px;
+  height: 380px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.Corps_de_page .Projet1 .partie5 {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+}
+.Corps_de_page .Projet1 .partie5 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet1 .partie5 p {
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet1 .partie5 .CartePartie5 {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 50px;
+}
+.Corps_de_page .Projet1 .partie5 .CartePartie5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'image remplit la div sans être rognée */
+  border-radius: 20px;
+}
+.Corps_de_page .Projet1 .partie6 {
+  margin: auto;
+  margin-top: 200px;
+  width: 950px;
+}
+.Corps_de_page .Projet1 .partie6 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet1 .partie6 p {
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet1 .partie6 button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 8px 8px 12px black;
+}
+.Corps_de_page .Projet1 .partie6 button img {
+  width: 30px;
+}
+.Corps_de_page .Projet1 .partie6 button img:nth-child(1) {
+  display: block;
+}
+.Corps_de_page .Projet1 .partie6 button img:nth-child(2) {
+  display: none;
+}
+.Corps_de_page .Projet1 .partie6 button:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+.Corps_de_page .Projet1 .partie6 button:hover img:nth-child(1) {
+  display: none;
+}
+.Corps_de_page .Projet1 .partie6 button:hover img:nth-child(2) {
+  display: block;
+}
+.Corps_de_page .Projet1 .partie6 .fondPartie6 {
+  position: absolute;
+  margin-left: -189px;
+  border-radius: 30px;
+  width: 1335px;
+  height: 800px;
+  transform: skewY(8deg);
+  z-index: -1;
+  margin-top: -642px;
+  background: linear-gradient(20deg, rgba(4, 7, 80, 0.669561135) 0%, rgba(80, 37, 201, 0.4034546924) 9%, rgba(114, 52, 65, 0) 31%), radial-gradient(circle at bottom right, rgb(60, 83, 145) 1%, rgba(55, 137, 255, 0.913258614) 8%, rgba(11, 65, 142, 0.7479925075) 15%, rgba(30, 95, 188, 0.7479925075) 23%, rgba(30, 95, 188, 0) 47%);
+}
+.Corps_de_page .Projet1 .pre-footer {
+  width: 100%;
+  height: 1px;
+  margin-top: 250px;
+}
+.Corps_de_page .Projet2 .carte_1 .background_Carte_1 {
+  background: linear-gradient(176deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 78%, rgb(220, 128, 178) 83%, rgb(252, 176, 69) 88%, rgb(216, 92, 42) 100%), linear-gradient(221deg, rgb(212, 206, 255) 0%, rgb(101, 80, 255) 11%, rgb(101, 80, 255) 39%, rgb(177, 99, 205) 53%, rgb(220, 128, 178) 66%, rgb(252, 176, 69) 80%, rgb(226, 114, 49) 91%, rgb(216, 92, 42) 100%);
+  background-blend-mode: overlay; /* Mélange des arrière-plans */
+}
+.Corps_de_page .Projet2 .partie2 {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -100px;
+}
+.Corps_de_page .Projet2 .partie2 .gauche {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 45%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.Corps_de_page .Projet2 .partie2 .gauche img {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.Corps_de_page .Projet2 .partie2 .droite {
+  width: 505px;
+}
+.Corps_de_page .Projet2 .partie2 .droite h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet2 .partie2 .droite h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet2 .partie2 .droite p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet2 .partie2 .droite a {
+  text-decoration: none;
+  color: white;
+}
+.Corps_de_page .Projet2 .partie3 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet2 .partie3 .TextPartie3 {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+.Corps_de_page .Projet2 .partie3 .TextPartie3 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: auto;
+}
+.Corps_de_page .Projet2 .partie3 .TextPartie3 h1:nth-child(2) {
+  opacity: 0.6;
+}
+.Corps_de_page .Projet2 .partie3 .TextPartie3 p {
+  font-size: 24px;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  margin-top: 35px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3 {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(23, 24, 28);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  border-radius: 20px;
+  padding: 10px 2% 10px 2%;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3_2 {
+  margin-top: -40%;
+  width: 20%;
+  padding: 5px;
+  position: absolute;
+  opacity: 0.8;
+  margin-left: 40%;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3_2 .BasCartePartie3 {
+  padding: 5px 0px 0px 0px;
+  align-items: flex-start;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3_2 .BasCartePartie3 img {
+  width: 20px;
+  height: 20px;
+}
+.Corps_de_page .Projet2 .partie3 .CartePartie3_2 .BasCartePartie3 h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+.Corps_de_page .Projet2 .partie3 .fondPartie3 {
+  position: absolute;
+  background-color: rgb(141, 77, 253);
+  border-radius: 30px;
+  width: 95%;
+  height: 850px;
+  transform: skewY(4deg);
+  z-index: -1;
+  opacity: 0.1;
+  margin-top: 5%;
+  left: 2.5%;
+}
+.Corps_de_page .Projet2 .partie4 {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Corps_de_page .Projet2 .partie4 .gauche {
+  width: 510px;
+}
+.Corps_de_page .Projet2 .partie4 .gauche h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet2 .partie4 .gauche p {
+  font-size: 24px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet2 .partie4 .droite {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 45%;
+  height: 600px;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet2 .partie5 {
+  margin: auto;
+  margin-top: 200px;
+  width: 950px;
+}
+.Corps_de_page .Projet2 .partie5 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet2 .partie5 p {
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet2 .partie5 button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 8px 8px 12px black;
+}
+.Corps_de_page .Projet2 .partie5 button img {
+  width: 30px;
+}
+.Corps_de_page .Projet2 .partie5 button img:nth-child(1) {
+  display: block;
+}
+.Corps_de_page .Projet2 .partie5 button img:nth-child(2) {
+  display: none;
+}
+.Corps_de_page .Projet2 .partie5 button:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+.Corps_de_page .Projet2 .partie5 button:hover img:nth-child(1) {
+  display: none;
+}
+.Corps_de_page .Projet2 .partie5 button:hover img:nth-child(2) {
+  display: block;
+}
+.Corps_de_page .Projet2 .partie5 .backgroundPartie5 {
+  position: absolute;
+  background-color: rgb(132, 118, 3);
+  border-radius: 30px;
+  width: 95%;
+  height: 600px;
+  transform: skewY(-6deg);
+  z-index: -1;
+  opacity: 0.1;
+  left: 2.5%;
+  margin-top: -6%;
+}
+.Corps_de_page .Projet3 .carte_1 .background_Carte_1 {
+  background: linear-gradient(45deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(135deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(45deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%, linear-gradient(135deg, rgb(20, 40, 69) 0%, rgb(13, 232, 149) 50%, rgb(20, 40, 69) 100%) center/100% 100%;
+  background-blend-mode: luminosity;
+}
+.Corps_de_page .Projet3 .partie2 {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -100px;
+}
+.Corps_de_page .Projet3 .partie2 .gauche {
+  width: 505px;
+}
+.Corps_de_page .Projet3 .partie2 .gauche h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet3 .partie2 .gauche h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet3 .partie2 .gauche p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet3 .partie2 .gauche a {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+.Corps_de_page .Projet3 .partie2 .gauche a:hover {
+  color: #FFC312;
+  opacity: 1;
+}
+.Corps_de_page .Projet3 .partie2 .droite {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 45%;
+  height: 510px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  rotate: 60deg;
+}
+.Corps_de_page .Projet3 .partie2 .droite img {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  border-radius: 100%;
+  rotate: -60deg;
+}
+.Corps_de_page .Projet3 .partie3 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet3 .partie3 .fondPartie3 {
+  position: absolute;
+  margin-left: -30px;
+  background-color: rgba(112, 119, 60, 0.48);
+  border-radius: 30px;
+  width: 80%;
+  height: 800px;
+  transform: skewY(-10deg);
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -100px;
+}
+.Corps_de_page .Projet3 .partie3 .TextPartie3 {
+  text-align: center;
+  margin-top: 250px;
+}
+.Corps_de_page .Projet3 .partie3 .TextPartie3 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: auto;
+}
+.Corps_de_page .Projet3 .partie3 .TextPartie3 h1:nth-child(2) {
+  opacity: 0.6;
+}
+.Corps_de_page .Projet3 .partie3 .TextPartie3 p {
+  font-size: 24px;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  margin-top: 35px;
+  text-align: justify;
+}
+.Corps_de_page .Projet3 .partie3 .CartePartie3 {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: rgb(23, 24, 28);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  border-radius: 20px;
+  padding: 10px;
+}
+.Corps_de_page .Projet3 .partie3 .CartePartie3 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet3 .partie3 .CartePartie3 .BasCartePartie3 {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.Corps_de_page .Projet3 .partie3 .CartePartie3 .BasCartePartie3 img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet3 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet3 .partie4 {
+  margin-top: 100px;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4 {
+  width: 40%;
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  padding: 10px;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4:nth-child(2) {
+  margin-left: 30%;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4:nth-child(3) {
+  margin-left: 50%;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4 .BasCartePartie4 {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4 .BasCartePartie4 img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet3 .partie4 .CartePartie4 .BasCartePartie4 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet3 .partie4 .fondPartie4 {
+  position: absolute;
+  background: radial-gradient(circle at 70% 20%, rgb(60, 121, 145) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+  width: 60%;
+  height: 800px;
+  transform: skewY(12deg);
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -867px;
+  right: 0;
+}
+.Corps_de_page .Projet3 .partie5 {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+}
+.Corps_de_page .Projet3 .partie5 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet3 .partie5 p {
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  margin: auto;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .btnSliderNext, .Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .btnSliderPrev {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 2;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .btnSliderNext:hover, .Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .btnSliderPrev:hover {
+  cursor: pointer;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .btnSliderNext {
+  margin-left: 39%;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .btnSliderPrev {
+  margin-left: -40%;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 {
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 .HautCartePartie5 img {
+  object-fit: cover; /* L'image remplit la div sans être rognée */
+  border-radius: 20px;
+  width: 100%;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 .BasCartePartie5 {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: 100px;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 .BasCartePartie5 img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 .BasCartePartie5 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet3 .partie6 {
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Corps_de_page .Projet3 .partie6 .droite {
+  width: 510px;
+}
+.Corps_de_page .Projet3 .partie6 .droite h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet3 .partie6 .droite p {
+  font-size: 24px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet3 .partie6 .gauche {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 45%;
+  height: 750px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.Corps_de_page .Projet3 .partie6 .gauche img {
+  width: 90%;
+  max-width: 482px;
+  margin: auto;
+}
+.Corps_de_page .Projet3 .partie7 {
+  margin-top: 200px;
+  position: relative;
+}
+.Corps_de_page .Projet3 .partie7 .fondPartie7 {
+  position: absolute;
+  background: radial-gradient(circle at 50% 95%, rgb(60, 145, 69) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+  width: 100%;
+  height: 800px;
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -467px;
+}
+.Corps_de_page .Projet3 .partie7 h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet3 .partie7 p {
+  font-size: 24px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet3 .partie7 a {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.6;
+}
+.Corps_de_page .Projet3 .partie7 a:hover {
+  color: #FFC312;
+  opacity: 1;
+}
+.Corps_de_page .Projet3 .partie7 .a2 {
+  margin-left: 25px;
+}
+.Corps_de_page .Projet4 .carte_1 .background_Carte_1 {
+  background: linear-gradient(159deg, rgb(25, 1, 1) 0%, rgb(159, 61, 61) 11%, rgb(140, 98, 98) 18%, rgb(163, 69, 69) 27%, rgb(206, 175, 175) 52%, rgb(224, 163, 163) 59%, rgb(188, 166, 166) 66%, rgb(164, 50, 50) 81%, rgb(147, 19, 19) 85%, rgb(0, 0, 0) 100%), linear-gradient(45deg, rgb(25, 1, 1) 0%, rgb(159, 61, 61) 11%, rgb(140, 98, 98) 18%, rgb(163, 69, 69) 27%, rgb(224, 163, 163) 59%, rgb(164, 50, 50) 81%, rgb(147, 19, 19) 85%, rgb(0, 0, 0) 100%);
+  background-blend-mode: overlay; /* Mélange des arrière-plans */
+}
+.Corps_de_page .Projet4 .partie2 {
+  display: flex;
+  margin-top: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -100px;
+}
+.Corps_de_page .Projet4 .partie2 .gauche {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 45%;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.Corps_de_page .Projet4 .partie2 .gauche img {
+  width: 60%;
+  margin: auto;
+}
+.Corps_de_page .Projet4 .partie2 .droite {
+  width: 505px;
+}
+.Corps_de_page .Projet4 .partie2 .droite h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet4 .partie2 .droite h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet4 .partie2 .droite p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet4 .partie3 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet4 .partie3 .fondPartie3 {
+  position: absolute;
+  margin-left: -30px;
+  background-color: rgb(104, 76, 76);
+  border-radius: 30px;
+  width: 80%;
+  height: 1250px;
+  transform: skewY(4deg);
+  z-index: -1;
+  opacity: 0.3;
+  margin-top: -100px;
+}
+.Corps_de_page .Projet4 .partie3 .TextPartie3 {
+  text-align: center;
+  margin-top: 250px;
+}
+.Corps_de_page .Projet4 .partie3 .TextPartie3 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: auto;
+}
+.Corps_de_page .Projet4 .partie3 .TextPartie3 h1:nth-child(2) {
+  opacity: 0.6;
+}
+.Corps_de_page .Projet4 .partie3 .TextPartie3 p {
+  font-size: 24px;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  margin-top: 35px;
+  text-align: justify;
+}
+.Corps_de_page .Projet4 .partie3 .CartePartie3 {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgb(23, 24, 28);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  border-radius: 95px;
+  padding: 10px;
+}
+.Corps_de_page .Projet4 .partie3 .CartePartie3 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet4 .partie4 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 {
+  overflow-x: hidden;
+  display: flex;
+  margin-top: -125px;
+  left: 5%;
+  width: 765px;
+  align-items: center;
+  position: absolute;
+  transform: rotate(146deg);
+  z-index: -1;
+}
+.Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 8px -8px 12px rgb(0, 0, 1);
+  width: 170px;
+  height: 350px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.Corps_de_page .Projet4 .partie4 img {
+  border-radius: 20px;
+  box-shadow: -2px 11px 12px rgb(0, 0, 1);
+  margin-top: 130px;
+  opacity: 1;
+  width: 60%;
+  margin-left: 15%;
+}
+.Corps_de_page .Projet4 .partie4 .TextPartie4 {
+  text-align: end;
+  width: 70%;
+  margin-left: 30%;
+  margin-top: 55px;
+}
+.Corps_de_page .Projet4 .partie4 .TextPartie4 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet4 .partie4 .TextPartie4 p {
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet4 .partie5 {
+  margin-top: 200px;
+}
+.Corps_de_page .Projet4 .partie5 .fondPartie5 {
+  position: absolute;
+  background: radial-gradient(circle at 30% 50px, rgb(145, 60, 60) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+  width: 1335px;
+  height: 800px;
+  transform: skewY(4deg);
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -80px;
+  left: 0;
+}
+.Corps_de_page .Projet4 .partie5 .TextPartie5 {
+  text-align: start;
+  margin-top: 250px;
+  max-width: 2100px;
+}
+.Corps_de_page .Projet4 .partie5 .TextPartie5 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  width: 80%;
+}
+.Corps_de_page .Projet4 .partie5 .TextPartie5 p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 35px;
+  width: 80%;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet4 .partie5 .CartePartie5 {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgb(23, 24, 28);
+  box-shadow: 4px 4px 12px rgb(0, 0, 1);
+  border-radius: 20px;
+  padding: 10px;
+}
+.Corps_de_page .Projet4 .partie5 .CartePartie5 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Corps_de_page .Projet4 .partie5 .CartePartie5 .BasCartePartie5 {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.Corps_de_page .Projet4 .partie5 .CartePartie5 .BasCartePartie5 img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.6;
+  margin-left: 20px;
+}
+.Corps_de_page .Projet4 .partie5 .CartePartie5 .BasCartePartie5 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.Corps_de_page .Projet4 .partie6 .TextePartie6 {
+  text-align: center;
+  margin-top: 200px;
+}
+.Corps_de_page .Projet4 .partie6 .TextePartie6 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet4 .partie6 .TextePartie6 p {
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div {
+  width: 30%;
+  max-width: 665px;
+  border-radius: 20px;
+  position: relative;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div:nth-child(2) {
+  margin-top: 70px;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div:nth-child(3) {
+  margin-top: 140px;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div div {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 800px;
+  display: flex;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div div img {
+  width: 95%;
+  height: auto;
+  margin: auto;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet4 .partie6 .fondPartie6 {
+  position: absolute;
+  background-color: rgb(132, 118, 3);
+  border-radius: 30px 0px 0px 30px;
+  width: 77%;
+  height: 1101px;
+  transform: skewY(8deg);
+  z-index: -1;
+  margin-top: -1000px;
+  right: 0px;
+  opacity: 0.1;
+}
+.Corps_de_page .Projet4 .partie7 {
+  width: 90%;
+  text-align: start;
+  margin: auto;
+  margin-top: 200px;
+}
+.Corps_de_page .Projet4 .partie7 div {
+  display: flex;
+  justify-content: space-between;
+}
+.Corps_de_page .Projet4 .partie7 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.Corps_de_page .Projet4 .partie7 p {
+  font-size: 24px;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+.Corps_de_page .Projet4 .partie7 button {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #FFC312;
+  color: #FFC312;
+  font-size: 24px;
+  font-weight: 400;
+  transition: 0.4s;
+  text-decoration: none;
+  box-shadow: 8px 8px 12px black;
+  height: 68px;
+}
+.Corps_de_page .Projet4 .partie7 button img {
+  width: 30px;
+}
+.Corps_de_page .Projet4 .partie7 button img:nth-child(1) {
+  display: block;
+}
+.Corps_de_page .Projet4 .partie7 button img:nth-child(2) {
+  display: none;
+}
+.Corps_de_page .Projet4 .partie7 button:hover {
+  background-color: #FFC312;
+  color: #1d242c;
+  box-shadow: 12px 12px 20px black;
+}
+.Corps_de_page .Projet4 .partie7 button:hover img:nth-child(1) {
+  display: none;
+}
+.Corps_de_page .Projet4 .partie7 button:hover img:nth-child(2) {
+  display: block;
+}
+
+@media (min-width: 2600px) {
+  .Corps_de_page .Projet1 .partie2 {
+    justify-content: space-evenly;
+  }
+  .Corps_de_page .Projet1 .partie4 .TextPartie4 {
+    width: 2000px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(2) {
+    margin-top: 25%;
+  }
+  .Corps_de_page .Projet4 .partie2 .gauche img {
+    width: auto;
+    height: 580px;
+  }
+}
+@media (min-width: 2000px) {
+  .Corps_de_page .Projet4 .partie6 .fondPartie6 {
+    margin-top: -1000px;
+  }
+}
+@media (max-width: 1500px) {
+  .Corps_de_page .Projet1 .partie2 .droite {
+    margin-left: 175px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(2) {
+    margin-left: 150px;
+  }
+  .Corps_de_page .Projet1 .partie6 .fondPartie6 {
+    width: 90%;
+    margin-left: auto;
+    left: 5%;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div div {
+    height: 750px;
+  }
+  .Corps_de_page .Projet4 .partie6 .fondPartie6 {
+    height: 930px;
+  }
+}
+@media (max-width: 1300px) {
+  .Corps_de_page .Projet1 .partie4 .fondPartie4 {
+    width: 95%;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img {
+    margin-top: 30px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(1) {
+    width: 325px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(2) {
+    width: 340px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(3) {
+    width: 300px;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 {
+    width: 1000px;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+    width: 160px;
+    height: 310px;
+  }
+  .Corps_de_page .Projet1 .partie5 {
+    margin-top: 100px;
+  }
+  .Corps_de_page .Projet3 .partie6 .droite {
+    margin-left: 10px;
+  }
+  .Corps_de_page .Projet3 .partie6 .gauche {
+    height: 590px;
+  }
+  .Corps_de_page .Projet4 .partie2 .gauche img {
+    width: 85%;
+  }
+  .Corps_de_page .Projet4 .partie3 .fondPartie3 {
+    height: 1200px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 {
+    border-radius: 55px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 {
+    padding: 5px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+    margin-bottom: 0px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 img {
+    margin-left: 55px;
+  }
+  .Corps_de_page .Projet4 .partie5 .fondPartie5 {
+    width: 100%;
+    height: 600px;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div div {
+    height: 560px;
+  }
+  .Corps_de_page .Projet4 .partie6 .fondPartie6 {
+    height: 850px;
+    margin-top: -800px;
+  }
+}
+@media (max-width: 1200px) {
+  .Corps_de_page .Projet1 .partie2 .gauche div:nth-child(2) {
+    display: none;
+  }
+  .Corps_de_page .Projet1 .partie2 .droite {
+    margin-left: 10px;
+  }
+  .Corps_de_page .Projet1 .partie3 .TextPartie3 {
+    margin-top: auto;
+  }
+  .Corps_de_page .Projet1 .partie6 {
+    width: auto;
+    margin-top: 50px;
+  }
+  .Corps_de_page .Projet2 .partie5 {
+    width: 100%;
+  }
+}
+@media (max-width: 1090px) {
+  .Corps_de_page .Projet1 .partie2 .gauche {
+    display: none;
+  }
+  .Corps_de_page .Projet1 .partie2 .droite {
+    margin-top: 0px;
+    margin-left: 10%;
+  }
+  .Corps_de_page .Projet1 .partie3 .CartePartie3 {
+    margin-top: 30px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(1) {
+    display: none;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(2) {
+    margin-left: 0px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(3) {
+    margin-left: 5px;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 {
+    width: 600px;
+    margin-top: -580px;
+    left: 280px;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+    width: 100px;
+    height: 220px;
+  }
+  .Corps_de_page .Projet1 .pre-footer {
+    margin-top: 225px;
+  }
+  .Corps_de_page .Projet2 .partie2 {
+    margin-top: 80px;
+  }
+  .Corps_de_page .Projet2 .partie2 .droite {
+    margin-left: 5px;
+    width: 300px;
+  }
+  .Corps_de_page .Projet2 .partie3 .fondPartie3 {
+    height: 600px;
+  }
+  .Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 {
+    width: 620px;
+  }
+  .Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+    width: 130px;
+    height: 300px;
+  }
+  .Corps_de_page .Projet4 .partie6 .TextePartie6 {
+    margin-top: 100px;
+  }
+  .Corps_de_page .Projet4 .partie6 .TextePartie6 p {
+    text-align: justify;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis {
+    margin-top: 50px;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div div {
+    height: 390px;
+  }
+  .Corps_de_page .Projet4 .partie6 .fondPartie6 {
+    height: 640px;
+    margin-top: -630px;
+    transform: skewY(13deg);
+  }
+}
+@media (max-width: 1000px) {
+  .Corps_de_page .Projet1 .partie4 .fondPartie4 {
+    width: 100%;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(2) {
+    display: none;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(3) {
+    margin-top: 0px;
+    margin-left: 130px;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 {
+    width: 500px;
+    margin-top: -580px;
+    left: 250px;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+    width: 100px;
+    height: 220px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3 {
+    margin-top: 50px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+    margin-left: 10px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3_2 {
+    width: 25%;
+    margin-left: 55%;
+    margin-top: -40%;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4 {
+    width: 60%;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4:nth-child(2) {
+    margin-left: 15%;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4:nth-child(3) {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 900px) {
+  .Corps_de_page {
+    width: 95%;
+  }
+  .Corps_de_page .carte_1 {
+    height: 333px;
+  }
+  .Corps_de_page .Projet1 .partie3 .fondPartie3 {
+    width: 95%;
+    margin-left: auto;
+  }
+  .Corps_de_page .Projet1 .partie4 .backgroundImagesPartie4 {
+    display: none;
+  }
+  .Corps_de_page .Projet1 .partie6 .fondPartie6 {
+    width: 100%;
+    left: 0%;
+  }
+  .Corps_de_page .Projet2 .partie2 {
+    margin-left: 0px;
+  }
+  .Corps_de_page .Projet3 .partie2 {
+    margin-left: 0;
+  }
+  .Corps_de_page .Projet3 .partie2 .gauche {
+    width: 50%;
+  }
+  .Corps_de_page .Projet3 .partie2 .droite img {
+    width: 280px;
+    height: 280px;
+  }
+  .Corps_de_page .Projet3 .partie3 .fondPartie3 {
+    width: 95%;
+    margin-left: auto;
+    height: 900px;
+  }
+  .Corps_de_page .Projet4 .partie2 {
+    margin-top: 100px;
+  }
+  .Corps_de_page .Projet4 .partie3 .fondPartie3 {
+    width: 95%;
+    margin-left: auto;
+    margin-top: -100px;
+  }
+  .Corps_de_page .Projet4 .partie4 img {
+    margin-top: 0px;
+  }
+  .Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 {
+    width: 415px;
+  }
+  .Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+    width: 90px;
+    height: 180px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 730px) {
+  .Corps_de_page .carte_1 {
+    height: 280px;
+  }
+  .Corps_de_page .carte_1 .background_Carte_1 h1 {
+    font-size: 45px;
+  }
+  .Corps_de_page .carte_1 .background_Carte_1 p {
+    font-size: 25px;
+  }
+  .Corps_de_page .Projet2 .partie2 {
+    margin-left: 0px;
+  }
+  .Corps_de_page .Projet2 .partie2 .gauche {
+    width: 25%;
+  }
+  .Corps_de_page .Projet2 .partie2 .gauche img {
+    display: none;
+  }
+  .Corps_de_page .Projet3 .partie6 {
+    flex-direction: column;
+  }
+  .Corps_de_page .Projet3 .partie6 .droite {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 95%;
+  }
+  .Corps_de_page .Projet3 .partie6 .gauche {
+    width: 80%;
+    height: auto;
+  }
+  .Corps_de_page .Projet4 .partie2 .gauche img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .Corps_de_page .Haut_de_page {
+    width: auto;
+  }
+  .Corps_de_page .Projet1 .partie2 .droite h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Projet1 .partie3 .TextPartie3 h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Projet1 .partie4 .ImagesPartie4 img:nth-child(3) {
+    margin-left: 0px;
+    left: 30px;
+    position: relative;
+  }
+  .Corps_de_page .Projet1 .partie5 h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Projet1 .partie6 h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Projet2 .partie3 .TextPartie3 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet2 .partie3 .TextPartie3 p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .Corps_de_page .Projet2 .partie3 .fondPartie3 {
+    height: 380px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 {
+    padding: 2px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 img {
+    width: 30px;
+    height: 30px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3_2 {
+    width: 30%;
+    margin-left: 60%;
+    margin-top: -50%;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3_2 .BasCartePartie3 img {
+    width: 20px;
+    height: 20px;
+  }
+  .Corps_de_page .Projet2 .partie3 .CartePartie3_2 .BasCartePartie3 h3 {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .Corps_de_page .Projet2 .partie4 .gauche h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet2 .partie4 .gauche p {
+    font-size: 20px;
+  }
+  .Corps_de_page .Projet2 .partie5 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet2 .partie5 p {
+    font-size: 20px;
+  }
+  .Corps_de_page .Projet3 .partie2 {
+    margin-top: 100px;
+  }
+  .Corps_de_page .Projet3 .partie2 .gauche {
+    width: 100%;
+  }
+  .Corps_de_page .Projet3 .partie2 .gauche h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet3 .partie2 .gauche h2 {
+    font-size: 23px;
+    text-align: justify;
+  }
+  .Corps_de_page .Projet3 .partie2 .gauche p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .Corps_de_page .Projet3 .partie2 .droite {
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  .Corps_de_page .Projet3 .partie2 .droite img {
+    width: 90%;
+    height: auto;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4 {
+    width: 80%;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4:nth-child(2) {
+    margin-left: 7%;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4:nth-child(3) {
+    margin-left: 14%;
+  }
+  .Corps_de_page .Projet3 .partie4 .CartePartie4 .BasCartePartie4 h3 {
+    font-size: 15px;
+  }
+  .Corps_de_page .Projet3 .partie5 h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Projet3 .partie5 p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 .BasCartePartie5 h3 {
+    font-size: 15px;
+  }
+  .Corps_de_page .Projet3 .partie5 .Carousel-Conteneur .CartePartie5CarrouselConteneur .CartePartie5 .BasCartePartie5 img {
+    width: 30px;
+    height: 30px;
+  }
+  .Corps_de_page .Projet3 .partie6 .droite h1 {
+    font-size: 35px;
+  }
+  .Corps_de_page .Projet3 .partie6 .droite p {
+    font-size: 20px;
+  }
+  .Corps_de_page .Projet4 .partie3 .TextPartie3 {
+    margin-top: -50px;
+  }
+  .Corps_de_page .Projet4 .partie3 .TextPartie3 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet4 .partie3 .TextPartie3 p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .Corps_de_page .Projet4 .partie3 .fondPartie3 {
+    height: 1000px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 {
+    border-radius: 40px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 h3 {
+    margin-left: 25px;
+    font-size: 17px;
+  }
+  .Corps_de_page .Projet4 .partie3 .CartePartie3 .BasCartePartie3 img {
+    margin-left: 20px;
+  }
+  .Corps_de_page .Projet4 .partie4 {
+    margin-top: 120px;
+  }
+  .Corps_de_page .Projet4 .partie4 img {
+    width: 70%;
+  }
+  .Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 {
+    width: 290px;
+    margin-top: 70px;
+    opacity: 0.4;
+    left: -5px;
+  }
+  .Corps_de_page .Projet4 .partie4 .backgroundImagesPartie4 .CarteBackgroundImagesPartie4 {
+    width: 60px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  .Corps_de_page .Projet4 .partie4 .TextPartie4 {
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .Corps_de_page .Projet4 .partie4 .TextPartie4 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet4 .partie4 .TextPartie4 p {
+    text-align: justify;
+    font-size: 20px;
+  }
+  .Corps_de_page .Projet4 .partie5 .TextPartie5 {
+    margin-top: 0px;
+  }
+  .Corps_de_page .Projet4 .partie5 .TextPartie5 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet4 .partie5 .TextPartie5 p {
+    font-size: 20px;
+    text-align: justify;
+    width: 100%;
+  }
+  .Corps_de_page .Projet4 .partie5 .CartePartie5 {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .Corps_de_page .Projet4 .partie5 .CartePartie5 .BasCartePartie5 {
+    padding: 10px;
+  }
+  .Corps_de_page .Projet4 .partie5 .CartePartie5 .BasCartePartie5 h3 {
+    font-size: 17px;
+    margin-left: 15px;
+  }
+  .Corps_de_page .Projet4 .partie5 .CartePartie5 .BasCartePartie5 img {
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+  }
+  .Corps_de_page .Projet4 .partie6 .TextePartie6 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet4 .partie6 .TextePartie6 p {
+    font-size: 20px;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis {
+    margin-top: 50px;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div div {
+    height: 290px;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div h1 {
+    font-size: 20px;
+  }
+  .Corps_de_page .Projet4 .partie6 .ImagesDesTroisEnnemis div p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .Corps_de_page .Projet4 .partie6 .fondPartie6 {
+    height: 572px;
+    margin-top: -593px;
+    transform: skewY(19deg);
+    width: 85%;
+  }
+  .Corps_de_page .Projet4 .partie7 h1 {
+    font-size: 40px;
+  }
+  .Corps_de_page .Projet4 .partie7 p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}
+
+/*# sourceMappingURL=Projets.css.map */

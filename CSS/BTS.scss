@@ -1,0 +1,1226 @@
+body {
+    margin: auto;
+    width: 100%;
+    max-width: 2500px;
+    height: 100%;
+    background-color: #17181C;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    cursor: context-menu;
+    overflow-x: hidden;
+}
+
+.Corps_de_page {
+    width: 75%;
+    margin: auto;
+    
+    .acceuil {
+        display: flex;
+        height: 100vh; // Utilisation de la hauteur de l'écran
+        min-height: 600px;
+        align-items: center;
+        .text-haut {
+            position: absolute;
+            width: 80%;
+            text-align: center;
+            top: 10px;
+            left: 10%;
+            p {
+                font-size: 15px;
+                opacity: 0.6;
+                color: #FFC312;
+                a {
+                    color: #FFC312;
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+        .gauche {
+            width: 40%;
+            img {
+                width: 100%;
+                border-radius: 100%;
+                border: 10px solid #a2a2a4;
+                box-shadow: 12px 12px 20px black;
+                animation-duration: .9s;
+                animation-iteration-count: initial;
+                animation-name: grossirTourner;
+                transition: none;
+            }
+        }
+        .droite {
+            margin-left: 50px;
+            width: 57%;
+            h2 {
+                font-size: 30px;
+                font-weight: 500;
+                opacity: 0.6;
+            }
+            h1 {
+                font-size: 50px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 24px;
+                opacity: 0.8;
+                .paragraph-long {
+                    display: none;
+                }
+                .voirPlus {
+                    font-size: 15px;
+                    text-decoration-line: underline;
+
+                    &:hover {
+                        color: #FFC312;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .btn_presentation {
+                display: flex;
+
+                a {
+                    padding: .75rem 1rem;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    border: 2px solid #FFC312;
+                    color: #FFC312;
+                    font-size: 24px;
+                    font-weight: 400;
+                    transition: .4s;
+                    text-decoration: none;
+                    box-shadow: 8px 8px 12px black;
+                    display: inline-block; // Ajout d'affichage en ligne pour les liens
+
+                    &:nth-child(1) {
+                        margin-right: 20px;
+                    }
+                }
+                a:hover {
+                    background-color: #FFC312;
+                    color: #1d242c;
+                    box-shadow: 12px 12px 20px black;
+                }
+                .desactive {
+                    display: none;
+                }
+            }
+            .clignote {
+                font-weight: 600;
+                animation-duration: .9s;
+                animation-iteration-count: infinite;
+                animation-name: clignoter;
+                transition: none;
+            }
+            .desactive {
+                display: none;
+            }
+            
+        } 
+        .grossis {
+            animation-duration: .9s;
+            animation-iteration-count: initial;
+            animation-name: grossir;
+            transition: none;
+        }
+    }
+    .parcoursScolaire {
+        margin-top: 100px;
+        .titre {
+            font-size: 38px;
+            font-weight: 600;
+            border-bottom: 2px solid #FFC312;
+            width: 425px;
+            text-align: center;
+        }
+        .lesCartesScolaires {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .carte {
+                margin: auto;
+                margin-top: 20px;
+                padding: 20px;
+                border-radius: 20px;
+                background-color: rgb(255, 255, 255, 0.1);
+                box-shadow: 8px 8px 12px black;
+                display: flex;
+                width: 70%;
+
+                .gauche {
+                    width: 25%;
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #FFC312;
+                        opacity: 0.6;
+                    }
+                }
+                .centre {
+                    width: 50%;
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: 18px;
+                        opacity: 0.8;
+                    }
+                }
+                .droite {
+                    width: 25%;
+                    h1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        opacity: 0.8;
+                        text-align: right;
+                    }
+                }
+
+                &:hover {
+                    scale: 1.05;
+                    box-shadow: 8px 8px 20px black;
+                    .gauche {
+                        h1 {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .stages {
+        display: flex;
+        margin-top: 200px;
+        .gauche {
+            width: 30%;
+            h1 {
+                font-size: 38px;
+                font-weight: 600;
+                border-bottom: 2px solid #FFC312;
+                width: 225px;
+                text-align: center;
+            }
+            .boutons {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+
+                .btn_stage {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 20px;
+                    padding: 10px;
+                    cursor: pointer;
+                    
+                    svg {
+                        display: none;
+                    }
+                    p {
+                        font-size: 20px;
+                        opacity: 0.8;
+                        margin-left: 20px;
+                        margin-bottom: 0;
+                    }
+                }
+                .btn_stageBlock {
+                    background-color: #FFC312;
+                    border-radius: 10px;
+                    cursor: context-menu;
+                    p {
+                        opacity: 1;
+                        color: #17181C;
+                    }
+                    svg {
+                        display: block;
+                    }
+                }
+            }
+            
+        }
+        .droite {
+            width: 70%;
+            margin-top: 25px;
+            .haut {
+                display: flex;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+                height: 145px;
+                .gauchehaut {
+                    min-width: 285px;
+                    h1 {
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+                    h2 {
+                        font-size: 18px;
+                        opacity: 0.6;
+                    }
+                    p {
+                        font-size: 20px;
+                        opacity: 0.8;
+                        margin-bottom: 0;
+                    }
+                    a {
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: white;
+                        opacity: 0.6;
+                        
+                        &:hover {
+                            color: #FFC312;
+                            opacity: 1;
+                        }
+                        
+                    }
+                }
+                .droitehautLaTeteDansLaToile {
+                    font-family: arial;
+                    text-align: center;
+                    position: relative;
+                    div {
+                        font-size: 200px;
+                        font-weight: bold;
+                        position: absolute;
+                        top: -130px;
+                        margin-left: 100px;
+                        width: 500px;
+                        animation-duration: 1s;
+                        animation-direction: alternate;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: infinite;
+                        animation-delay: 10s;
+                        z-index: -1;
+                        span {
+                            color: #17181C;
+                        }
+                        &:nth-child(7) {
+                            span {
+                                color: #FF4400;
+                            }
+                        }
+                    }
+                    .deux {
+                        animation-name: bouge;
+                        animation-duration: 12s;
+                        animation-delay: 4s;
+                        animation-direction: normal;
+                    }
+                    .cinq {
+                        animation-name: bouge2;
+                        animation-duration: 12s;
+                        animation-delay: 4s;
+                        animation-direction: normal;
+                    }
+                }
+                .droitehautDragonium {
+                    img {
+                        width: 175px;
+                        margin-left: 410px;
+                        margin-top: -65px;
+                    }
+                }
+            }
+            .bas {
+                p {
+                    margin-top: 20px;
+                    font-size: 20px;
+                    opacity: 0.8;
+                    width: 95%;
+                }
+                .btn_stage {
+                    display: flex;
+
+                    a {
+                        padding: .75rem 1rem;
+                        border-radius: 50px;
+                        background-color: transparent;
+                        border: 2px solid #FFC312;
+                        color: #FFC312;
+                        font-size: 20px;
+                        font-weight: 400;
+                        transition: .4s;
+                        text-decoration: none;
+                        box-shadow: 8px 8px 12px black;
+                        display: inline-block; // Ajout d'affichage en ligne pour les liens
+
+                        &:nth-child(1) {
+                            margin-right: 20px;
+                        }
+                    }
+                    a:hover {
+                        background-color: #FFC312;
+                        color: #1d242c;
+                        box-shadow: 12px 12px 20px black;
+                    }
+                }
+            }
+        }
+    }
+    .epreuveE5 {
+        display: flex;
+        margin-top: 250px;
+        .gauche {
+            width: 30%;
+            .titre {
+                font-size: 38px;
+                font-weight: 600;
+                border-bottom: 2px solid #FFC312;
+                width: 225px;
+                text-align: center;
+            }
+            
+            .Carte_Projet {
+                background-color: rgba(255, 255, 255, 0.03);
+                box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                width: 94%;
+                height: 300px;
+                border-radius: 20px;
+                margin-top: 50px;
+                padding: 5px;
+                cursor: pointer;
+    
+                &:hover {
+                    box-shadow: 8px 8px 16px rgb(0, 0, 0.5);
+                }
+    
+                .Carte_Haut {
+                    height: 80%;
+                    margin: auto;
+                    border-radius: 20px;
+                    background: 
+                        linear-gradient(45deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                        linear-gradient(135deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                        linear-gradient(45deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                        linear-gradient(135deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%;
+                    background-blend-mode: luminosity;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+    
+                    h1{
+                        // Taille de la police 58px en Black
+                        font-size : 30px;
+                        font-weight: 800;
+                    }
+    
+                    p {
+                        // Taille de la police 24px en regular avec 60% d'oppacité
+                        font-size: 20px;
+                        font-weight: 400;
+                        opacity: 0.6;
+                    }
+                }
+    
+                .Carte_Bas {
+                    height: 20%;
+                    margin: auto;
+                    display: flex;
+                    align-items: last baseline;
+                    margin-top: 12px;
+                    padding-left: 20px;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        opacity: 0.50;
+                    }
+                    div {
+                        margin-left: 10px;
+                    }
+                    h3 {
+                        // Taille de la police 18px en semi-bold
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    p{
+                        // Taille de la police 16px en regular avec 60% d'oppacité
+                        font-size: 14px;
+                        font-weight: 400;
+                        opacity: 0.6;
+                    }
+                }
+            }
+            
+        }
+        .droite {
+            width: 70%;
+            margin-top: 25px;
+            .haut {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+                height: 145px;
+                .gauchehaut {
+                    width: 70%;
+                    h1 {
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+                    h2 {
+                        font-size: 18px;
+                        opacity: 0.6;
+                    }
+                    p {
+                        font-size: 20px;
+                        opacity: 0.8;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+                .droitehaut
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    a {
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: white;
+                        opacity: 0.6;
+                        margin-bottom: 15px;
+                        &:hover {
+                            color: #FFC312;
+                            opacity: 1;
+                        }
+                        
+                    }
+                }
+            }
+            .bas {
+                p {
+                    margin-top: 20px;
+                    font-size: 20px;
+                    opacity: 0.8;
+                    width: 95%;
+                }
+                .btn_stage {
+                    display: flex;
+
+                    a {
+                        padding: .75rem 1rem;
+                        border-radius: 50px;
+                        background-color: transparent;
+                        border: 2px solid #FFC312;
+                        color: #FFC312;
+                        font-size: 20px;
+                        font-weight: 400;
+                        transition: .4s;
+                        text-decoration: none;
+                        box-shadow: 8px 8px 12px black;
+                        display: inline-block; // Ajout d'affichage en ligne pour les liens
+
+                        &:nth-child(1) {
+                            margin-right: 20px;
+                        }
+                    }
+                    a:hover {
+                        background-color: #FFC312;
+                        color: #1d242c;
+                        box-shadow: 12px 12px 20px black;
+                    }
+                }
+            }
+        }
+    }
+}
+.veilleTechnologique {
+    position: relative; /* Position relative pour pouvoir positionner tsparticles absolument à l'intérieur */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 2500px;
+
+    #tsparticles {
+        position: absolute; /* Position absolue par rapport au conteneur parent */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        margin-top: -10%;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .titre {
+        font-size: 38px;
+        font-weight: 600;
+        border-bottom: 2px solid #FFC312;
+        width: 425px;
+        text-align: center;
+        margin: auto;
+        margin-top: 300px;
+    }
+    .outils {
+        margin: auto;
+        margin-top: 90px;
+        width: 75%;
+        position: relative;
+        z-index: -1;
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            width: 545px;
+            text-align: center;
+            border-bottom: 0.5px solid #FFC312BD;
+        }
+        p {
+            font-size: 20px;
+            opacity: 0.8;
+            width: 75%;
+        }
+    }
+    .veille {
+        margin: auto;
+        margin-top: 50px;
+        text-align: end;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: -1;
+        position: relative;
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            width: 260px;
+            text-align: center;
+            border-bottom: 0.5px solid #FFC312BD;
+        }
+        p {
+            font-size: 20px;
+            opacity: 0.8;
+            width: 75%;
+        }
+    }
+    .cookies {
+        margin: auto;
+        margin-top: 50px;
+        width: 75%;
+        position: relative;
+        z-index: -1;
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            width: 260px;
+            text-align: center;
+            border-bottom: 0.5px solid #FFC312BD;
+        }
+        p {
+            font-size: 20px;
+            opacity: 0.8;
+            width: 75%;
+        }
+    }
+    .articles {
+        width: 75%;
+        margin: auto;
+        margin-top: 80px;
+        .articlestitre {
+            font-size: 30px;
+            font-weight: 600;
+            width: 220px;
+            text-align: center;
+            border-bottom: 0.5px solid #FFC312BD;
+            margin: auto;
+        }
+        .listeArticles {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            
+            .CartesPar2 {
+                display: flex;
+                justify-content: space-around;
+                width: 50%;
+                .Carte_Aritcle {
+                    z-index: 2;
+                    padding: 10px;
+                    border-radius: 15px;
+                    width: 45%;
+                    background-color: rgb(41, 43, 51);
+                    position: relative;
+                    box-shadow: 4px 4px 12px rgb(0, 0, 1);
+                    &:hover {
+                        box-shadow: 8px 8px 16px rgb(0, 0, 0.5);
+                        cursor: pointer;
+                        scale: 1.01;
+                    }
+                    .Carte_Haut {
+                        display: flex;
+                        height: 20%;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        div {
+                            margin-left: 10px;
+                            h2 {
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin-bottom: 0;
+                            }
+                            p {
+                                font-size: 15px;
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                    .Carte_Bas {
+                        margin-top: 5%;
+                        height: 75%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        p {
+                            font-size: 18px;
+                        }
+                        div {
+                            position: relative;
+                            overflow: hidden;
+                            width: 100%;
+                            height: 130px;
+                            border-radius: 15px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 15px;
+                                object-fit: cover; /* Rognage de l'image */
+                                object-position: center; /* Centrage de l'image */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.desactive {
+    display: none;
+}
+
+@keyframes bouge {
+    0% {
+        transform: rotate(0deg) scaleX(1);
+        opacity: .2;
+    }
+    80% {
+        transform: rotate(360deg) scaleX(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg) scaleX(1.1);
+        opacity: 0;
+    }
+}
+@keyframes bouge2 {
+    0% {
+        transform: rotate(0deg) scaleX(1);
+        opacity: .2;
+    }
+    80% {
+        transform: rotate(-360deg) scaleX(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(-360deg) scaleX(1.1);
+        opacity: 0;
+    }
+}
+@keyframes grossir {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    90% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes grossirTourner {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    90% {
+        transform: scale(1.1) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 1500px) {
+    .Corps_de_page {
+        .stages {
+            .droite {
+                .haut {
+                    .droitehautLaTeteDansLaToile {
+                        div {
+                            margin-left: -70px;
+                        }
+                    }
+                    .droitehautDragonium {
+                        img {
+                            margin-left: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .epreuveE5 {
+            .gauche {
+                .Carte_Projet {
+                    height: 250px;
+                    .Carte_Bas {
+                        margin-top: auto;
+                        img {
+                            display: none;
+                        }
+                        h3 {
+                            display: none;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .Corps_de_page {
+        .acceuil {
+            min-height: 715px;
+            align-items: center;
+            justify-content: center;
+
+            .gauche {
+                opacity: 0.3;
+                img {
+                    border: 3px solid #a2a2a4;;
+                }
+            }
+            .droite {
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+
+                .btn_presentation {
+                    justify-content: center;
+                }
+            }
+        }
+        .epreuveE5 {
+            flex-direction: column;
+            .gauche {
+                width: 100%;
+                .Carte_Projet {
+                    width: 70%;
+                }
+            }
+            .droite {
+                width: 100%;
+            }
+        }
+    }
+    .veilleTechnologique {
+        .articles {
+            .listeArticles {
+                flex-direction: column;
+                width: 100%;
+                margin: auto;
+                margin-top: 50px;
+                .CartesPar2 {
+                    width: 80%;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .Corps_de_page {
+        .stages {
+            .droite {
+                .haut {
+                    .droitehautLaTeteDansLaToile {
+                        div {
+                            font-size: 100px;
+                            top: -25px;
+                            margin-left: -150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 985px) {
+    .Corps_de_page {
+        .acceuil {
+            .gauche {
+                position: absolute;
+            }
+        }
+        .stages {
+            flex-direction: column;
+            .gauche {
+                width: 100%;
+                .boutons {
+                    flex-direction: initial;
+                    margin-top: 0px;
+                }
+            }
+            .droite {
+                margin-top: 70px;
+                width: 95%;
+                .haut {
+                    .droitehautLaTeteDansLaToile {
+                        div {
+                            margin-left: -110px;
+                        }
+                    }
+                }
+                .bas {
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .epreuveE5 {
+            .droite {
+                .haut {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .Corps_de_page {
+        width: 95%;
+        .parcoursScolaire {
+            .lesCartesScolaires {
+                .carte {
+                    width: 95%;
+                }
+            }
+        }
+        .acceuil {
+            .text-haut { 
+                p {
+                    font-size: 10px;
+                }
+            
+            }
+        }
+        .stages {
+            .droite {
+                .haut {
+                    .droitehautLaTeteDansLaToile {
+                        div {
+                            margin-left: -235px;
+                            margin-top: -70px;
+                        }
+                    }
+                    .droitehautDragonium {
+                        img {
+                            margin-left: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        .epreuveE5 {
+            .droite {
+                .bas {
+                    p {
+                        margin: auto;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .Corps_de_page {
+        .acceuil {
+            .droite {
+                h1 {
+                    font-size: 43px;
+                }
+                h2 {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        .parcoursScolaire {
+            .titre {
+                font-size: 35px;
+                border-bottom: 0px;
+                width: 100%;
+                text-decoration: underline;
+                text-decoration-color: #FFC312;
+            }
+            .lesCartesScolaires {
+                .carte {
+                    .gauche {
+                        display: none;
+                    }
+                    .centre {
+                        width: 100%;
+                        h1 {
+                            font-size: 23px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .droite {
+                        width: 20%;
+                        color: #FFC312;
+                    }
+                }
+            }
+        }
+        .stages {
+            .gauche {
+                h1 {
+                    font-size: 35px;
+                }
+                .boutons {
+                    width: 100%;
+                    .btn_stage {
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .droite {
+                .haut {
+                    .droitehautLaTeteDansLaToile {
+                        div {
+                            margin-left: -235px;
+                            margin-top: -70px;
+                        }
+                    }
+                }
+                .bas {
+                    p {
+                        font-size: 17px;
+                    }
+                    .btn_stage {
+                        a {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+        .epreuveE5 {
+            .gauche {
+                .titre {
+                    font-size: 35px;
+                }
+                .Carte_Projet {
+                    .Carte_Haut {
+                        h1 {
+                            font-size: 25px;
+                        }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .droite {
+                .haut {
+                    flex-direction: column;
+                    .gauchehaut {
+                        width: 100%;
+                        h1 {
+                            font-size: 23px;
+                        }
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                    .droitehaut {
+                        flex-direction: initial;
+                        a {
+                            margin-left: 10px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .bas {
+                    p {
+                        font-size: 16px;
+                    }
+                    .btn_stage {
+                        a {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+    .veilleTechnologique {
+        .titre {
+            font-size: 30px;
+            width: 320px;
+        }
+        .outils {
+            width: 90%;
+            h1 {
+                font-size: 24px;
+                text-align: start;
+                max-width: 430px;
+                width: 95%;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: #FFC312;
+                border-bottom: 0px;
+            }
+            p {
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+        .veille {
+            width: 90%;
+            h1 {
+                font-size: 24px;
+                text-align: end;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: #FFC312;
+                border-bottom: 0px;
+            }
+            p {
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+        .cookies {
+            width: 90%;
+            h1 {
+                font-size: 24px;
+                text-align: start;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-color: #FFC312;
+                border-bottom: 0px;
+            }
+            p {
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+        .articles {
+            .listeArticles {
+                .CartesPar2 {
+                    flex-direction: column;
+                    margin-top: 0;
+                    .Carte_Aritcle {
+                        margin-bottom: 20px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .Corps_de_page {
+        .stages {
+            .droite {
+                .haut {
+                    height: auto;
+                    .droitehautLaTeteDansLaToile {
+                        display: none;
+                    }
+                    .droitehautDragonium {
+                        display: none;
+                    }
+                }
+                .bas {
+                    .btn_stage {
+                        a {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .Corps_de_page {
+        .acceuil {
+            min-height: 760px;
+        }
+        .parcoursScolaire {
+            .lesCartesScolaires {
+                .carte {
+                    .gauche {
+                        h1 {
+                            font-size: 20px;
+                        }
+                    }
+                    .centre {
+                        width: 75%;
+                        h1 {
+                            margin-right: 5px;
+                        }
+                    }
+                    .droite {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}

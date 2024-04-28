@@ -1,0 +1,2220 @@
+body {
+    margin: auto;
+    width: 100%;
+    max-width: 3000px;
+    height: 100%;
+    background-color: #17181C;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.Corps_de_page {
+    width: 75%;
+    margin: auto;
+
+    .Haut_de_page {
+        width: 500px;
+        margin-left: 10%;
+        margin-top: 95px;
+        h1 {
+            // Taille de la police 48px en semi-bold
+            font-size:48px;
+            font-weight: 600;
+        }
+        p {
+            // Taille de la police 17px en regular avec 60% d'oppacité
+            font-size: 20px;
+            opacity: 0.6;
+        }
+
+        .Liste_btn_projets {
+            display: flex;
+            margin-top: 50px;
+            a {
+                font-size: 15px;
+                font-weight: 600;
+                color: white;
+                text-decoration: none;
+                margin-left: 15px;
+                background-color: rgba(255, 255, 255, 0.03);
+                box-shadow: 2px 2px 7px rgb(0, 0, 1);
+                cursor: pointer;
+                padding: 5px;
+                border-radius: 25px;
+                transition: 0.4s;
+                width: 79px;
+                text-align: center;
+
+                &:hover {
+                    color: #FFC312;
+                    box-shadow: 8px 8px 14px black;
+                    scale: 1.1;
+                }
+            }
+
+            a:nth-child(1) {
+                margin-left: -15px;
+            }
+        }
+    }
+
+    
+    .carte_1 {
+        background-color: rgba(255, 255, 255, 0.03);
+        box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+        width: 90%;
+        height: 600px;
+        border-radius: 20px;
+        padding: 5px;
+        margin: auto;
+        margin-top: 90px;
+
+        .background_Carte_1 {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            h1 {
+                font-size: 80px;
+                font-weight: 900;
+            }
+            p {
+                font-size: 32px;
+                font-weight: 600;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .Projet1 {
+        .carte_1 {
+            .background_Carte_1 {
+                background: 
+                    linear-gradient(221deg, rgba(0,25,59,1) 0%, rgba(9,58,126,1) 12%, rgba(141,179,242,1) 39%, rgba(9,58,126,1) 84%, rgba(20,40,69,1) 100%),
+                    linear-gradient(354deg, rgba(0,25,59,1) 0%, rgba(24,91,185,1) 24%, rgba(132,152,185,1) 39%, rgba(19,71,143,1) 67%, rgba(9,58,126,1) 83%, rgba(20,40,69,1) 100%);
+                background-blend-mode: overlay; /* Mode de fusion */ 
+            }
+        }
+
+        .partie2 {
+            display: flex;
+            margin-top: 110px;
+
+            .gauche {
+                display: flex;
+                div {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    width: 350px;
+                    height: 650px;
+                    border-radius: 20px;
+                    position: relative;
+                    
+                    // Appliquer un flou à l'angle en bas à droite
+                    &:nth-child(1):after {
+                        content: "";
+                        position: absolute;
+                        bottom: -58px;
+                        right: -34px;
+                        width: 200px;
+                        height: 550px;
+                        background: linear-gradient(to bottom right, #1110, rgb(23, 24, 28));
+                        filter: blur(20px);
+                        z-index: 1;
+                        border-radius: 0 0 20px 0;
+                    }
+            
+                    // Ajouter du contenu à la deuxième div
+                    &:nth-child(2) {
+                        z-index: 2;
+                        position: absolute;
+                        margin-left: 154px;
+                        margin-top: 106px;
+                        // background : #17181C avec une opacité de 0.1
+                        //background-color: rgba(23, 24, 28, 1);
+                    }
+
+                    &:nth-child(2):after {
+                        content: "";
+                        position: absolute;
+                        left: 3px;
+                        top: 3px;
+                        width: 200px;
+                        height: 550px;
+                        background: linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+                        filter: blur(6.2px);
+                        z-index: 1;
+                        border-radius: 20px 0 20px 0;
+                    }
+                }
+            }
+
+            .droite {
+                width: 505px;
+                margin-top: 106px;
+                margin-left: 300px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                h2 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 25px;
+                    opacity: 0.8;
+                }
+                p {
+                    font-size: 18px;
+                    opacity: 0.8;
+                    margin-top: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        .partie3 {
+            margin-top: 200px;
+            .fondPartie3 {
+                position: absolute;
+                margin-left: -30px;
+                background-color: rgba(29, 44, 51); // Couleur avec opacité
+                border-radius: 30px; // Angle de 30px pour tous les coins
+                width: 80%;
+                height: 800px;
+                transform: skewY(-8deg); // Inclinaison
+                z-index: -1;
+                opacity: 0.8;
+                margin-top: -100px;
+            }
+
+            .TextPartie3 {
+                text-align: center;
+                margin-top: 250px;
+                h1 {
+                    // 48px en semi-bold
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin: auto;
+
+                    &:nth-child(2) {
+                        opacity: 0.6;
+                    }
+                }
+                p {
+                    // 24px en regular
+                    font-size: 24px;
+                    font-weight: 400;
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 35px;
+                    text-align: justify;
+                }
+            }
+
+            .CartePartie3 {
+                width: 90%;
+                margin: auto;
+                margin-top: 100px;    
+                background-color: rgb(23, 24, 28);
+                box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                border-radius: 20px;
+                padding: 10px;
+                
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .BasCartePartie3 {
+                    display: flex;
+                    padding: 20px;
+                    align-items: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        opacity: 0.6;
+                        margin-left: 20px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+
+        .partie4 {
+            margin-top: 200px;
+
+            .fondPartie4 {
+                position: absolute;
+                right: 0;
+                background: radial-gradient(circle at calc(100% - 350px) -50px, rgba(145,60,60,1) 0%, rgba(20,40,69,0.10373480446866246) 40%, rgba(20,40,69,0) 60%);
+                width: 1335px;
+                height: 800px;
+                transform: skewY(-8deg); // Inclinaison
+                z-index: -1;
+                opacity: 0.8;
+                margin-top: -100px;
+            }
+
+            .TextPartie4 {
+                text-align: end;
+                margin-top: 250px;
+                h1 {
+                    // 48px en semi-bold
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin: auto;
+
+                    &:nth-child(2) {
+                        opacity: 0.6;
+                    }
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-left: 20%;
+                    margin-top: 35px;
+                    width: 80%;
+                    opacity: 0.8;
+                }
+            }
+
+            .ImagesPartie4 {
+                img {
+                    border-radius: 10px;
+                    box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                    margin-top: 50px;
+                    opacity: 1;
+                }
+
+                img:nth-child(1) {
+                    width: 33%;
+                    margin-top: -160px;
+                    margin-left: 10px;
+                }
+                img:nth-child(2) {
+                    width: 340px;
+                    margin-top: 250px;
+                    margin-left: 60px;
+                }
+                img:nth-child(3) {
+                    width: 28%;
+                    margin-top: -220px;
+                    margin-left: 40px;
+                }
+            }
+
+            .backgroundImagesPartie4 {
+                overflow-x: hidden;
+                display: flex;
+                margin-top: -1000px;
+                left: -50px;
+                width: 1100px;
+                align-items: center;
+                position: absolute;
+                transform: rotate(144deg);
+                z-index: -1;
+
+                .CarteBackgroundImagesPartie4 {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    box-shadow: 8px -8px 12px rgb(0, 0, 0.5);
+                    width: 200px;
+                    height: 380px;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        .partie5 {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 24px;
+                margin-top: 20px;
+                opacity: 0.8;
+            }
+
+            .CartePartie5 {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+                padding: 10px;
+                margin-top: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; /* L'image remplit la div sans être rognée */
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        .partie6 {
+            margin: auto;
+            margin-top: 200px;
+            width: 950px;
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 24px;
+                margin-top: 20px;
+                opacity: 0.8;
+            }
+
+            button {
+                padding: .75rem 1rem;
+                border-radius: .5rem;
+                background-color: transparent;
+                border: 2px solid #FFC312;
+                color: #FFC312;
+                font-size: 24px;
+                font-weight: 400;
+                transition: .4s;
+                text-decoration: none;
+                box-shadow: 8px 8px 12px black;
+
+                img {
+                    width: 30px;
+                }
+
+                img:nth-child(1) {
+                    display: block;
+                }
+
+                img:nth-child(2) {
+                    display: none;
+                }
+            }
+            button:hover {
+                background-color: #FFC312;
+                color: #1d242c;
+                box-shadow: 12px 12px 20px black;
+
+                img:nth-child(1) {
+                    display: none;
+                }
+
+                img:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            .fondPartie6 {
+                position: absolute;
+                margin-left: -189px;
+                border-radius: 30px;
+                width: 1335px;
+                height: 800px;
+                transform: skewY(8deg);
+                z-index: -1;
+                margin-top: -642px;
+                background: linear-gradient(20deg, rgba(4, 7, 80, 0.669561135) 0%, rgba(80, 37, 201, 0.4034546924) 9%, rgba(114, 52, 65, 0) 31%), radial-gradient(circle at bottom right, rgb(60, 83, 145) 1%, rgba(55, 137, 255, 0.913258614) 8%, rgba(11, 65, 142, 0.7479925075) 15%, rgba(30, 95, 188, 0.7479925075) 23%, rgba(30, 95, 188, 0) 47%);
+            }
+        }
+
+        .pre-footer {
+            width: 100%;
+            height: 1px;
+            margin-top: 250px;
+        }
+    }
+    .Projet2 {
+        .carte_1 {
+            .background_Carte_1 {
+                background: linear-gradient(176deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 78%, rgba(220,128,178,1) 83%, rgba(252,176,69,1) 88%, rgba(216,92,42,1) 100%), 
+                linear-gradient(221deg, rgba(212,206,255,1) 0%, rgba(101,80,255,1) 11%, rgba(101,80,255,1) 39%, rgba(177,99,205,1) 53%, rgba(220,128,178,1) 66%, rgba(252,176,69,1) 80%, rgba(226,114,49,1) 91%, rgba(216,92,42,1) 100%);
+                background-blend-mode: overlay; /* Mélange des arrière-plans */ 
+            }
+        }
+
+        .partie2 {
+            display: flex;
+            margin-top: 200px;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: -100px;
+
+
+            .gauche {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 45%;
+                height: 600px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                    margin: auto;
+                }
+            }
+
+            .droite {
+                width: 505px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                h2 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 25px;
+                    opacity: 0.8;
+                }
+                p {
+                    font-size: 18px;
+                    opacity: 0.8;
+                    margin-top: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        .partie3 {
+            margin-top: 200px;
+
+            .TextPartie3 {
+                text-align: center;
+                margin: auto;
+                width: 90%;
+                h1 {
+                    // 48px en semi-bold
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin: auto;
+
+                    &:nth-child(2) {
+                        opacity: 0.6;
+                    }
+                }
+                p {
+                    // 24px en regular
+                    font-size: 24px;
+                    font-weight: 400;
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 35px;
+                    opacity: 0.8;
+                }
+            }
+
+            .CartePartie3 {
+                width: 90%;
+                margin: auto;
+                margin-top: 100px;    
+                background-color: rgb(23, 24, 28);
+                box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                border-radius: 20px;
+                padding: 10px 2% 10px 2%;
+                
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .BasCartePartie3 {
+                    display: flex;
+                    padding: 20px;
+                    align-items: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        opacity: 0.6;
+                        margin-left: 20px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: 40px;
+                    }
+                }
+            }
+
+            .CartePartie3_2 {
+                margin-top: -40%;
+                width: 20%;
+                padding: 5px;
+                position: absolute;
+                opacity: 0.8;
+                margin-left: 40%;
+
+                .BasCartePartie3 {
+                    padding: 5px 0px 0px 0px;
+                    align-items: flex-start;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    h3 {
+                        font-size: 13px;
+                        font-weight: 600;
+                        margin-left: 30px;
+                    }
+                }
+            }
+
+            .fondPartie3 {
+                position: absolute;
+                background-color: rgb(141, 77, 253);
+                border-radius: 30px;
+                width: 95%;
+                height: 850px;
+                transform: skewY(4deg);
+                z-index: -1;
+                opacity: 0.1;
+                margin-top: 5%;
+                left: 2.5%;
+            }
+        }
+        .partie4 {
+            display: flex;
+            margin-top: 150px;
+            justify-content: space-evenly;
+            align-items: center;
+            .gauche {
+                width: 510px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 24px;
+                    opacity: 0.8;
+                    margin-top: 20px;
+                }
+            }
+            .droite {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 45%;
+                height: 600px;
+                border-radius: 20px;
+            }
+        }
+        .partie5 {
+            margin: auto;
+            margin-top: 200px;
+            width: 950px;
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 24px;
+                margin-top: 20px;
+                opacity: 0.8;
+            }
+
+            button {
+                padding: .75rem 1rem;
+                border-radius: .5rem;
+                background-color: transparent;
+                border: 2px solid #FFC312;
+                color: #FFC312;
+                font-size: 24px;
+                font-weight: 400;
+                transition: .4s;
+                text-decoration: none;
+                box-shadow: 8px 8px 12px black;
+
+                img {
+                    width: 30px;
+                }
+
+                img:nth-child(1) {
+                    display: block;
+                }
+
+                img:nth-child(2) {
+                    display: none;
+                }
+            }
+            button:hover {
+                background-color: #FFC312;
+                color: #1d242c;
+                box-shadow: 12px 12px 20px black;
+
+                img:nth-child(1) {
+                    display: none;
+                }
+
+                img:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            .backgroundPartie5 {
+                position: absolute;
+                background-color: rgb(132, 118, 3);
+                border-radius: 30px;
+                width: 95%;
+                height: 600px;
+                transform: skewY(-6deg);
+                z-index: -1;
+                opacity: 0.1;
+                left: 2.5%;
+                margin-top: -6%;
+            }
+        }
+    }
+    .Projet3 {
+        .carte_1 {
+            .background_Carte_1 {
+                background: 
+                linear-gradient(45deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                linear-gradient(135deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                linear-gradient(45deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%,
+                linear-gradient(135deg, rgba(20,40,69,1) 0%, rgba(13,232,149,1) 50%, rgba(20,40,69,1) 100%) center/100% 100%;
+                background-blend-mode: luminosity;
+            }
+        }
+        .partie2 {
+            display: flex;
+            margin-top: 200px;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: -100px;
+
+            .gauche {
+                width: 505px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                h2 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 25px;
+                    opacity: 0.8;
+                }
+                p {
+                    font-size: 18px;
+                    opacity: 0.8;
+                    margin-top: 20px;
+                }
+                a {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: white;
+                    opacity: 0.6;
+                    margin-bottom: 15px;
+                    &:hover {
+                        color: #FFC312;
+                        opacity: 1;
+                    }
+                    
+                }
+            }
+            .droite {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 45%;
+                height: 510px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                rotate: 60deg;
+
+                img {
+                    width: 320px;
+                    height: 320px;
+                    margin: auto;
+                    border-radius: 100%;
+                    rotate: -60deg;
+                }
+            }
+        }
+        .partie3 {
+            margin-top: 200px;
+            .fondPartie3 {
+                position: absolute;
+                margin-left: -30px;
+                background-color: rgba(112, 119, 60, 0.48);
+                border-radius: 30px;
+                width: 80%;
+                height: 800px;
+                transform: skewY(-10deg);
+                z-index: -1;
+                opacity: 0.8;
+                margin-top: -100px;
+            }
+
+            .TextPartie3 {
+                text-align: center;
+                margin-top: 250px;
+                h1 {
+                    // 48px en semi-bold
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin: auto;
+
+                    &:nth-child(2) {
+                        opacity: 0.6;
+                    }
+                }
+                p {
+                    // 24px en regular
+                    font-size: 24px;
+                    font-weight: 400;
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 35px;
+                    text-align: justify;
+                }
+            }
+
+            .CartePartie3 {
+                width: 90%;
+                margin: auto;
+                margin-top: 100px;    
+                background-color: rgb(23, 24, 28);
+                box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                border-radius: 20px;
+                padding: 10px;
+                
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .BasCartePartie3 {
+                    display: flex;
+                    padding: 20px;
+                    align-items: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        opacity: 0.6;
+                        margin-left: 20px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+        .partie4 {
+            margin-top: 100px;
+            .CartePartie4 {
+                width: 40%;
+                margin-top: 25px;
+                background-color: rgba(255, 255, 255, 0.22);
+                border-radius: 10px;
+                padding: 10px;
+
+                &:nth-child(2) {
+                    margin-left: 30%;
+                }
+                &:nth-child(3) {
+                    margin-left: 50%;
+                }
+                
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .BasCartePartie4 {
+                    display: flex;
+                    padding: 10px;
+                    align-items: center;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        opacity: 0.6;
+                        margin-left: 20px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: 40px;
+                    }
+                }
+            }
+            .fondPartie4 {
+                position: absolute;
+                background: radial-gradient(circle at 70% 20%, rgb(60, 121, 145) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+                width: 60%;
+                height: 800px;
+                transform: skewY(12deg);
+                z-index: -1;
+                opacity: 0.8;
+                margin-top: -867px;
+                right: 0;
+            }
+        }
+        .partie5 {
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 24px;
+                margin-top: 20px;
+                opacity: 0.8;
+            }
+
+
+            .Carousel-Conteneur {
+                display: flex;
+                width: 75%;
+                align-items: center;
+                overflow: hidden; 
+                justify-content: center;
+                margin: auto;
+                .btnSliderNext, .btnSliderPrev{
+                    width:40px;
+                    height:40px;
+                    text-align:center;
+                    opacity:.7;
+                    position: absolute;
+                    z-index: 2;
+                }
+                
+                .btnSliderNext:hover, .btnSliderPrev:hover{
+                    cursor:pointer;
+                }
+            
+                .btnSliderNext{
+                    margin-left: 39%;
+                }
+            
+                .btnSliderPrev{
+                    margin-left: -40%;
+                }
+                .CartePartie5CarrouselConteneur {
+                    margin-top: 50px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .CartePartie5 {
+                        margin-right: 20px;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        border-radius: 20px;
+                        padding: 10px;
+                        width: 100%;
+                        .HautCartePartie5 {
+                            img {
+                                object-fit: cover; /* L'image remplit la div sans être rognée */
+                                border-radius: 20px;
+                                width: 100%;
+                            }
+                        }
+                        .BasCartePartie5 {
+                            display: flex;
+                            padding: 20px;
+                            align-items: center;
+                            height: 100px;
+                            img {
+                                width: 50px;
+                                height: 50px;
+                                opacity: 0.6;
+                                margin-left: 20px;
+                            }
+                            h3 {
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin-left: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partie6 {
+            display: flex;
+            margin-top: 150px;
+            justify-content: space-evenly;
+            align-items: center;
+            .droite {
+                width: 510px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 24px;
+                    opacity: 0.8;
+                    margin-top: 20px;
+                }
+            }
+            .gauche {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 45%;
+                height: 750px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+                img {
+                    width: 90%;
+                    max-width: 482px;
+                    margin: auto;
+                }
+            }
+        }
+        .partie7 {
+            margin-top: 200px;
+            position: relative;
+            .fondPartie7 {
+                position: absolute;
+                background: radial-gradient(circle at 50% 95%, rgb(60, 145, 69) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+                width: 100%;
+                height: 800px;
+                z-index: -1;
+                opacity: 0.8;
+                margin-top: -467px;
+            }
+            h1 {
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 24px;
+                opacity: 0.8;
+            }
+            a {
+                font-size: 15px;
+                font-weight: 400;
+                color: white;
+                opacity: 0.6;
+                
+                &:hover {
+                    color: #FFC312;
+                    opacity: 1;
+                }
+            }
+            .a2 {
+                margin-left: 25px;
+            }
+        }
+    }
+    .Projet4 {
+        .carte_1 {
+            .background_Carte_1 {
+                background: linear-gradient(159deg, rgba(25,1,1,1) 0%, rgba(159,61,61,1) 11%, rgba(140,98,98,1) 18%, rgba(163,69,69,1) 27%, rgba(206,175,175,1) 52%, rgba(224,163,163,1) 59%, rgba(188,166,166,1) 66%, rgba(164,50,50,1) 81%, rgba(147,19,19,1) 85%, rgba(0,0,0,1) 100%),
+                linear-gradient(45deg, rgba(25,1,1,1) 0%, rgba(159,61,61,1) 11%, rgba(140,98,98,1) 18%, rgba(163,69,69,1) 27%, rgba(224,163,163,1) 59%, rgba(164,50,50,1) 81%, rgba(147,19,19,1) 85%, rgba(0,0,0,1) 100%);
+                background-blend-mode: overlay; /* Mélange des arrière-plans */
+            }
+        }
+        .partie2 {
+            display: flex;
+            margin-top: 200px;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: -100px;
+
+
+            .gauche {
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 45%;
+                height: 600px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+
+            .droite {
+                width: 505px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                h2 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 25px;
+                    opacity: 0.8;
+                }
+                p {
+                    font-size: 18px;
+                    opacity: 0.8;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .partie3 {
+            margin-top: 200px;
+            .fondPartie3 {
+                position: absolute;
+                margin-left: -30px;
+                background-color: rgb(104, 76, 76);
+                border-radius: 30px; // Angle de 30px pour tous les coins
+                width: 80%;
+                height: 1250px;
+                transform: skewY(4deg); // Inclinaison
+                z-index: -1;
+                opacity: 0.3;
+                margin-top: -100px;
+            }
+
+            .TextPartie3 {
+                text-align: center;
+                margin-top: 250px;
+                h1 {
+                    // 48px en semi-bold
+                    font-size: 48px;
+                    font-weight: 600;
+                    margin: auto;
+
+                    &:nth-child(2) {
+                        opacity: 0.6;
+                    }
+                }
+                p {
+                    // 24px en regular
+                    font-size: 24px;
+                    font-weight: 400;
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 35px;
+                    text-align: justify;
+                }
+            }
+
+            .CartePartie3 {
+                width: 90%;
+                margin: auto;
+                margin-top: 50px;    
+                background-color: rgb(23, 24, 28);
+                box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                border-radius: 95px;
+                padding: 10px;
+                
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .BasCartePartie3 {
+                    display: flex;
+                    padding: 20px;
+                    align-items: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        opacity: 0.6;
+                        margin-left: 20px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+        .partie4 {
+            margin-top: 200px;
+
+            .backgroundImagesPartie4 {
+                overflow-x: hidden;
+                display: flex;
+                margin-top: -125px;
+                left: 5%;
+                width: 765px;
+                align-items: center;
+                position: absolute;
+                transform: rotate(146deg);
+                z-index: -1;
+
+                .CarteBackgroundImagesPartie4 {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    box-shadow: 8px -8px 12px rgb(0, 0, 0.5);
+                    width: 170px;
+                    height: 350px;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    border-radius: 15px;
+                }
+            }
+            img {
+                border-radius: 20px;
+                box-shadow: -2px 11px 12px rgb(0, 0, 1);
+                margin-top: 130px;
+                opacity: 1;
+                width: 60%;
+                margin-left: 15%;
+            }
+            .TextPartie4 {
+                text-align: end;
+                width: 70%;
+                margin-left: 30%;
+                margin-top: 55px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: 400;
+                    opacity: 0.8;
+                }
+            }
+        }
+        .partie5 {
+            margin-top: 200px;
+
+            .fondPartie5 {
+                position: absolute;
+                background: radial-gradient(circle at 30% 50px, rgb(145, 60, 60) 0%, rgba(20, 40, 69, 0.1037348045) 40%, rgba(20, 40, 69, 0) 60%);
+                width: 1335px;
+                height: 800px;
+                transform: skewY(4deg);
+                z-index: -1;
+                opacity: 0.8;
+                margin-top: -80px;
+                left: 0;
+            }
+
+            .TextPartie5 {
+                text-align: start;
+                margin-top: 250px;
+                max-width: 2100px;
+                h1 {
+                    // 48px en semi-bold
+                    font-size: 48px;
+                    font-weight: 600;
+                    width: 80%;
+                }
+                p {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 35px;
+                    width: 80%;
+                    opacity: 0.8;
+                }
+            }
+
+            .CartePartie5 {
+                width: 90%;
+                margin: auto;
+                margin-top: 50px;    
+                background-color: rgb(23, 24, 28);
+                box-shadow: 4px 4px 12px rgb(0, 0, 0.5);
+                border-radius: 20px;
+                padding: 10px;
+                
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+                .BasCartePartie5 {
+                    display: flex;
+                    padding: 20px;
+                    align-items: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        opacity: 0.6;
+                        margin-left: 20px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+        .partie6 {
+            .TextePartie6{
+                text-align: center;
+                margin-top: 200px;
+                h1 {
+                    font-size: 48px;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 24px;
+                    margin-top: 20px;
+                    opacity: 0.8;
+                }
+            }
+            .ImagesDesTroisEnnemis {
+                display: flex;
+                margin-top: 100px;
+                justify-content: space-evenly;
+                
+                div {
+                    width: 30%;
+                    max-width: 665px;
+                    border-radius: 20px;
+                    position: relative;                
+                    &:nth-child(2) {
+                        margin-top: 70px;
+                    }
+                    &:nth-child(3) {
+                        margin-top: 140px;
+                    }
+                    div {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        width: 100%;
+                        height: 800px;
+                        display: flex;
+                        img {
+                            width: 95%;
+                            height: auto;
+                            margin: auto;
+                        }
+                    }
+                    h1 {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-top: 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .fondPartie6 {
+                position: absolute;
+                background-color: rgb(132, 118, 3);
+                border-radius: 30px 0px 0px 30px;
+                width: 77%;
+                height: 1101px;
+                transform: skewY(8deg);
+                z-index: -1;
+                margin-top: -1000px;
+                right: 0px;
+                opacity: 0.1;
+            }
+        }
+        .partie7 {
+            width: 90%;
+            text-align: start;
+            margin: auto;
+            margin-top: 200px;
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
+            h1 {
+                font-size: 48px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 24px;
+                margin-top: 20px;
+                opacity: 0.8;
+            }
+
+            button {
+                padding: .75rem 1rem;
+                border-radius: .5rem;
+                background-color: transparent;
+                border: 2px solid #FFC312;
+                color: #FFC312;
+                font-size: 24px;
+                font-weight: 400;
+                transition: .4s;
+                text-decoration: none;
+                box-shadow: 8px 8px 12px black;
+                height: 68px;
+
+                img {
+                    width: 30px;
+                }
+
+                img:nth-child(1) {
+                    display: block;
+                }
+
+                img:nth-child(2) {
+                    display: none;
+                }
+            }
+            button:hover {
+                background-color: #FFC312;
+                color: #1d242c;
+                box-shadow: 12px 12px 20px black;
+
+                img:nth-child(1) {
+                    display: none;
+                }
+
+                img:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Ecrans de taille superieur a 2600px
+@media (min-width: 2600px) {
+    .Corps_de_page {
+        .Projet1 {
+            .partie2 {
+                justify-content: space-evenly;
+            }
+
+            .partie4 {
+                .TextPartie4 {
+                    width: 2000px;
+                }
+
+                .ImagesPartie4 {
+                    img {
+                        &:nth-child(2) {
+                            margin-top: 25%;
+                        }
+                    }
+                }
+            }
+
+        }
+        .Projet4 {
+            .partie2 {
+                .gauche {
+                    img {
+                        width: auto;
+                        height: 580px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille superieur a 2000px
+@media (min-width: 2000px) {
+    .Corps_de_page {
+        .Projet4 {
+            .partie6 {
+                .fondPartie6 {
+                    margin-top: -1000px;
+                }
+            }
+        }
+    }
+}
+
+// Pour les ecrans de moin de 1500px
+@media (max-width: 1500px) {
+    .Corps_de_page {
+        .Projet1 {
+            .partie2 {
+                .droite {
+                    margin-left: 175px;
+                }
+            }
+
+            .partie4 {
+                .ImagesPartie4 {
+                    img {
+                        &:nth-child(2) {
+                            margin-left: 150px;
+                        }
+                    }
+                }
+            }
+
+            .partie6 {
+                .fondPartie6 {
+                    width: 90%;
+                    margin-left: auto;
+                    left: 5%;
+                }
+            }
+        }
+        .Projet4 {
+            .partie6 {
+                .ImagesDesTroisEnnemis {
+                    div {
+                        div {
+                            height: 750px;
+                        }
+                    }
+                }
+                .fondPartie6 {
+                    height: 930px;
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 1300px
+@media (max-width: 1300px) {
+    .Corps_de_page {
+        .Projet1 {
+            .partie4 {
+                .fondPartie4 {
+                    width: 95%;
+                }
+                .ImagesPartie4 {
+                    img {
+                        margin-top: 30px;
+
+                        &:nth-child(1) {
+                            width: 325px;
+                        }
+                        &:nth-child(2) {
+                            width: 340px;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                        }
+                        &:nth-child(3) {
+                            width: 300px;
+                        }
+                    }
+                }
+                .backgroundImagesPartie4 {
+                    width: 1000px;
+
+                    .CarteBackgroundImagesPartie4 {
+                        width: 160px;
+                        height: 310px;
+                    }
+                }
+            }
+            .partie5 {
+                margin-top: 100px;
+            }
+        }
+        .Projet3 {
+            .partie6 {
+                .droite {
+                    margin-left: 10px;
+                }
+                .gauche {
+                    height: 590px;
+                }
+            }
+        }
+        .Projet4 {
+            .partie2 {
+                .gauche {
+                    img {
+                        width: 85%;
+                    }
+                }
+            }
+            .partie3 {
+                .fondPartie3 {
+                    height: 1200px;
+                }
+                .CartePartie3 {
+                    border-radius: 55px;
+                    .BasCartePartie3 {
+                        padding: 5px;
+                        h3 {
+                            margin-bottom: 0px;
+                        }
+                        img {
+                            margin-left: 55px;
+                        }
+                    }
+                }
+            }
+            .partie5 {
+                .fondPartie5 {
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+            .partie6 {
+                .ImagesDesTroisEnnemis {
+                    div {
+                        div {
+                            height: 560px;
+                        }
+                    }
+                }
+                .fondPartie6 {
+                    height: 850px;
+                    margin-top: -800px;
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 1200px
+@media (max-width: 1200px) {
+    .Corps_de_page {
+        .Projet1 {
+            .partie2 {
+                .gauche {
+                    div:nth-child(2) {
+                        display: none;
+                    }
+                }
+                .droite {
+                    margin-left: 10px;
+                }
+            }
+            .partie3 {
+                .TextPartie3 {
+                    margin-top: auto;
+                }
+            }
+
+            .partie6 {
+                width: auto;
+                margin-top: 50px;
+            }
+        }
+        .Projet2 {
+            .partie5 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 1090px
+@media (max-width: 1090px) {
+    .Corps_de_page {
+        .Projet1 {
+            .partie2 {
+                .gauche {
+                    display: none;
+                }
+                .droite {
+                    margin-top: 0px;
+                    margin-left: 10%;
+                }
+            }
+
+            .partie3 {
+                .CartePartie3 {
+                    margin-top: 30px;
+                }
+            }
+
+            .partie4 {
+                .ImagesPartie4 {
+                    img {
+                        &:nth-child(1) {
+                            display: none;
+                        }
+                        &:nth-child(2) {
+                            margin-left: 0px;
+                        }
+                        &:nth-child(3) {
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .backgroundImagesPartie4 {
+                    width: 600px;
+                    margin-top: -580px;
+                    left: 280px;
+
+                    .CarteBackgroundImagesPartie4 {
+                        width: 100px;
+                        height: 220px;
+                    }
+                }
+            }
+            .pre-footer {
+                margin-top: 225px;
+            }
+        }
+        .Projet2 {
+            .partie2 {
+                margin-top: 80px;
+                .droite {
+                    margin-left: 5px;
+                    width: 300px;
+                }
+            }
+            .partie3 {
+                .fondPartie3 {
+                    height: 600px;
+                }
+            }
+        }
+        .Projet4 {
+            .partie4 {
+                .backgroundImagesPartie4 {
+                    width: 620px;
+                    .CarteBackgroundImagesPartie4 {
+                        width: 130px;
+                        height: 300px;
+                    }
+                }
+            }
+            .partie6 {
+                .TextePartie6 {
+                    margin-top: 100px;
+                    p {
+                        text-align: justify;
+                    }
+                }
+                .ImagesDesTroisEnnemis {
+                    margin-top: 50px;
+                    div {
+                        div {
+                            height: 390px;
+                        }
+                    }
+                }
+                .fondPartie6 {
+                    height: 640px;
+                    margin-top: -630px;
+                    transform: skewY(13deg);
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 1000px
+@media (max-width: 1000px) {
+    .Corps_de_page {
+        .Projet1 {
+            .partie4 {
+                .fondPartie4 {
+                    width: 100%;
+                }
+                .ImagesPartie4 {
+                    img {
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            margin-top: 0px;
+                            margin-left: 130px;
+                        }
+                    }
+                }
+                .backgroundImagesPartie4 {
+                    width: 500px;
+                    margin-top: -580px;
+                    left: 250px;
+
+                    .CarteBackgroundImagesPartie4 {
+                        width: 100px;
+                        height: 220px;
+                    }
+                }
+            }
+        }
+        .Projet2 {
+            .partie3 {
+                .CartePartie3 {
+                    margin-top: 50px;
+                    .BasCartePartie3 {
+                        h3 {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .CartePartie3_2 {
+                    width: 25%;
+                    margin-left: 55%;
+                    margin-top: -40%;
+                }
+            }
+        }
+        .Projet3 {
+            .partie4 {
+                .CartePartie4 {
+                    width: 60%;
+                    &:nth-child(2) {
+                        margin-left: 15%;
+                    }
+                    &:nth-child(3) {
+                        margin-left: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 900px
+@media (max-width: 900px) { 
+    .Corps_de_page {
+        width: 95%;
+        .carte_1 {
+            height: 333px;
+        }
+
+        .Projet1 {
+            .partie3 {
+                .fondPartie3 {
+                    width: 95%;
+                    margin-left: auto;
+                }
+            }
+            .partie4 {
+                .backgroundImagesPartie4 {
+                    display: none;
+                }
+            }
+            .partie6 {
+                .fondPartie6 {
+                    width: 100%;
+                    left: 0%;
+                }
+            }
+        }
+
+        .Projet2 {
+            .partie2 {
+                margin-left: 0px;
+            }
+        }
+
+        .Projet3 {
+            .partie2 {
+                margin-left: 0;
+                .gauche {
+                    width: 50%;
+                }
+                .droite {
+                    img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+            }
+            .partie3 {
+                .fondPartie3 {
+                    width: 95%;
+                    margin-left: auto;
+                    height: 900px;
+                }
+            }
+        }
+
+        .Projet4 {
+            .partie2 {
+                margin-top: 100px;
+            }
+            .partie3 {
+                .fondPartie3 {
+                    width: 95%;
+                    margin-left: auto;
+                    margin-top: -100px;
+                }
+            }
+            .partie4 {
+                img {
+                    margin-top: 0px;
+                }
+                .backgroundImagesPartie4 {
+                    width: 415px;
+                    .CarteBackgroundImagesPartie4 {
+                        width: 90px;
+                        height: 180px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 730px
+@media (max-width: 730px) {
+    .Corps_de_page {
+        .carte_1 {
+            height: 280px;
+            .background_Carte_1 {  
+                h1 {
+                    font-size: 45px;
+                }
+                p {
+                    font-size: 25px;
+                }
+            }
+        }
+        .Projet2 {
+            .partie2 {
+                margin-left: 0px;
+                .gauche {
+                    width: 25%;
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .Projet3 {
+            .partie6 {
+                flex-direction: column;
+                .droite {
+                    margin-left: 0px;
+                    margin-top: 10px;
+                    width: 95%;
+                }
+                .gauche {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+        }
+        .Projet4 {
+            .partie2 {
+                .gauche {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ecrans de taille inferieur a 600px
+@media (max-width: 600px) {
+    .Corps_de_page {
+        .Haut_de_page{
+            width: auto;
+        }
+
+        .Projet1 {
+            .partie2 {
+                .droite {
+                    h1 {
+                        font-size: 35px;
+                    }
+                }
+            }
+            .partie3 {
+                .TextPartie3 {
+                    h1 {
+                        font-size: 35px;
+                    }
+                }
+            }
+
+            .partie4 {
+                .ImagesPartie4 {
+                    img {
+                        &:nth-child(3) {
+                            margin-left: 0px;
+                            left: 30px;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+
+            .partie5 {
+                h1 {
+                    font-size: 35px;
+                }
+            }
+
+            .partie6 {
+                h1 {
+                    font-size: 35px;
+                }
+            }
+        }
+        .Projet2 {
+            .partie3 {
+                .TextPartie3 {
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                        text-align: justify;
+                    }
+                }
+                .fondPartie3 {
+                    height: 380px;
+                }
+                .CartePartie3 {
+                    .BasCartePartie3 {
+                        padding: 2px;
+                        img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        h3 {
+                            font-size: 15px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .CartePartie3_2 {
+                    width: 30%;
+                    margin-left: 60%;
+                    margin-top: -50%;
+                    .BasCartePartie3 {
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                        h3 {
+                            font-size: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .partie4 {
+                .gauche {
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .partie5 {
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        .Projet3 {
+            .partie2 {
+                margin-top: 100px;
+                .gauche {
+                    width: 100%;
+                    h1 {
+                        font-size: 40px;
+                    }
+                    h2{
+                        font-size: 23px;
+                        text-align: justify;
+                    }
+                    p {
+                        font-size: 18px;
+                        text-align: justify;
+                    }
+                }
+                .droite {
+                    height: 400px;
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0.2;
+                    img {
+                        width: 90%;
+                        height: auto;
+                    }
+                }
+            }
+            .partie4 {
+                .CartePartie4 {
+                    width: 80%;
+                    &:nth-child(2) {
+                        margin-left: 7%;
+                    }
+                    &:nth-child(3) {
+                        margin-left: 14%;
+                    }
+                    .BasCartePartie4 {
+                        h3 {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .partie5 {
+                h1 {
+                    font-size: 35px;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: justify;
+                }
+                .Carousel-Conteneur {
+                    .CartePartie5CarrouselConteneur {
+                        .CartePartie5 {
+                            .BasCartePartie5 {
+                                h3 {
+                                    font-size: 15px;
+                                }
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .partie6 {
+                .droite {
+                    h1 {
+                        font-size: 35px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .Projet4 {
+            .partie3 {
+                .TextPartie3 {
+                    margin-top: -50px;
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                        text-align: justify;
+                    }
+                }
+                .fondPartie3 {
+                    height: 1000px;
+                }
+                .CartePartie3 {
+                    border-radius: 40px;
+                    .BasCartePartie3 {
+                        h3 {
+                            margin-left: 25px;
+                            font-size: 17px;
+                        }
+                        img {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .partie4 {
+                margin-top: 120px;
+                img {
+                    width: 70%;
+                }
+                .backgroundImagesPartie4 {
+                    width: 290px;
+                    margin-top: 70px;
+                    opacity: 0.4;
+                    left: -5px;
+                    .CarteBackgroundImagesPartie4 {
+                        width: 60px;
+                        height: 100px;
+                        margin-right: 10px;
+                    }
+                }
+                .TextPartie4 {
+                    width: 95%;
+                    margin: auto;
+                    margin-top: 15px;
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        text-align: justify;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .partie5 {
+                .TextPartie5 {
+                    margin-top: 0px;
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                        text-align: justify;
+                        width: 100%;
+                    }
+                }
+                .CartePartie5 {
+                    width: 95%;
+                    margin: auto;
+                    margin-top: 50px;
+                    .BasCartePartie5 {
+                        padding: 10px;
+                        h3 {
+                            font-size: 17px;
+                            margin-left: 15px;
+                        }
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin-left: 0px;
+                        }
+                    }   
+                }
+            }
+            .partie6{
+                .TextePartie6 {
+                    h1 {
+                        font-size: 40px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                }
+                .ImagesDesTroisEnnemis {
+                    margin-top: 50px;
+                    div {
+                        div {
+                            height: 290px;
+                        }
+                        h1 {
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 15px;
+                            text-align: justify;
+                        }
+                    }
+                }
+                .fondPartie6 {
+                    height: 572px;
+                    margin-top: -593px;
+                    transform: skewY(19deg);
+                    width: 85%;
+                }
+            }
+            .partie7 {
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
